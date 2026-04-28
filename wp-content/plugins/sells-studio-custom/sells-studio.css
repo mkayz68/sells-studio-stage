@@ -1,0 +1,33 @@
+.custom-form {
+    border-radius: 10px;
+    width: 450px;
+}
+
+.custom-textarea {
+    border-radius: 10px;
+    width: 450px;
+    resize: none;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+.custom-submit {
+    height: 50px;
+    border-radius: 40px;
+    background-color: #EC2758;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    border: none;
+    padding: 0 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.custom-submit:hover {
+    transform: scale(1.05);
+}

@@ -15,3 +15,6 @@ Mardi 28 Avril :
         Installation de curl
     12h05
         Swift est installé, et a l'air fonctionnel!
+    13h-14h40
+        CSS personnalisé sur la page contact
+        Creation d'un design pour la page "Nos prestations"
