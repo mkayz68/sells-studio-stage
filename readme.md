@@ -20,3 +20,6 @@ Mardi 28 Avril :
         Creation d'un design pour la page "Nos prestations"
     16h08
         Fin page "Nos prestations" v1.0
+    17h00
+        ajouts d'icones et personnalisation contact sur la page présentation
+        modif css
