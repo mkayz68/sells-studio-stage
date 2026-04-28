@@ -18,3 +18,5 @@ Mardi 28 Avril :
     13h-14h40
         CSS personnalisé sur la page contact
         Creation d'un design pour la page "Nos prestations"
+    16h08
+        Fin page "Nos prestations" v1.0
