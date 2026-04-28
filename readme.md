@@ -6,6 +6,12 @@ Lundi 27 Avril :
     Ajouts d'extension (Contact Form 7, une extension personnalisé pour google maps, Solid Security)
 
 Mardi 28 Avril :
-    Placement du logo dans le header une fois fourni
-    Tentative d'installation de ma virtual machine sur Linux pour essayer de commencer Swift
-    Installation de Linux Ubuntu sur Oracle VirtualBox
+    9h00 - 11h
+        Placement du logo dans le header une fois fourni
+        Tentative d'installation de ma virtual machine sur Linux pour essayer de commencer Swift
+        Installation de Linux Ubuntu sur Oracle VirtualBox
+    11h40
+        Configuration terminée et tentative d'installer Swift
+        Installation de curl
+    12h05
+        Swift est installé, et a l'air fonctionnel!
