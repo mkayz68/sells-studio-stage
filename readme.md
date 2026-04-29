@@ -21,5 +21,10 @@ Mardi 28 Avril :
     16h08
         Fin page "Nos prestations" v1.0
     17h00
-        ajouts d'icones et personnalisation contact sur la page présentation
+        ajouts d'icones et personnalisation contact sur la page prestation
         modif css
+
+Mercredi 29 Avril
+    9h00 - 11h
+        Création de la page Formation
+        Créations de carte, visuel uniquement pour le moment. v1
