@@ -28,6 +28,13 @@ Mercredi 29 Avril
     9h00 - 11h
         Création de la page Formation
         Créations de carte, visuel uniquement pour le moment. v1
-    13h-14h30
+    13h - 14h30
         Fix bug médiathèque WordPress (contournement avec une extension)
         Changement des icones
+    15h00 - 16h30
+        Modification de la page formation
+        Création des pages de formation (single page)
+        Début de page HTML/CSS (v1)
+    16h30 - 17h00
+        Début page HTML/CSS
+    
