@@ -13,7 +13,7 @@ Update URI: oxygenbuilder.com
 define("CT_VERSION", 	"4.8");
 define("CT_FW_PATH", 	plugin_dir_path( __FILE__ )  . 	"component-framework" );
 define("CT_FW_URI", 	plugin_dir_url( __FILE__ )  . 	"component-framework" );
-define("CT_PLUGIN_MAIN_FILE", __FILE__ );	
+define("CT_PLUGIN_MAIN_FILE", __FILE__ );
 
 global $ct_ignore_post_types;
 $ct_ignore_post_types = array(

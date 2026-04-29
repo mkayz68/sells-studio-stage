@@ -9,6 +9,11 @@
  * @since Twenty Twenty-Five 1.0
  */
 
+add_filter('wp_image_editors', function($editors) {
+  return ['WP_Image_Editor_GD', 'WP_Image_Editor_Imagick'];
+});
+add_filter( 'big_image_size_threshold', '__return_false' );
+
 // Adds theme support for post formats.
 if ( ! function_exists( 'twentytwentyfive_post_format_setup' ) ) :
 	/**
