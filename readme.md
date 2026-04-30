@@ -37,4 +37,12 @@ Mercredi 29 Avril
         Début de page HTML/CSS (v1)
     16h30 - 17h00
         Début page HTML/CSS
+
+Jeudi 30 Avril
+    9h00 - 11h45
+        Création d'une page formation pour regrouper les cartes par catégories
+    13h00 - 14h11
+        Fin de la nouvelle page catégorie de formation ainsi que chaque single de catégorie de formation.
+        Création de mon css personnalisé pour ajouter des petits effets au passage de la souris
+
     
