@@ -44,5 +44,8 @@ Jeudi 30 Avril
     13h00 - 14h11
         Fin de la nouvelle page catégorie de formation ainsi que chaque single de catégorie de formation.
         Création de mon css personnalisé pour ajouter des petits effets au passage de la souris
+    14h11 - 17h00
+        Reponsive sur toutes les pages effectué
+        Début d'ideé front-end pour la page "notre équipe" et "nos prestations". géré en responsive aussi.
 
     
