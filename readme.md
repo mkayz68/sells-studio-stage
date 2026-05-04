@@ -52,5 +52,10 @@ Lundi 04 Mai
     9h00 - 9h40
         Réalisation petite urgence pour un élément graphique (menu d'un restau)
         Approfondissement page prestation & notre équipe
-
+    13h - 15h
+        Créations des pages de prestation single (en attente de plus de contenu)
+    15h - 16h30
+        Retouchage page d'accueil
+        préparation de la BDD mise à jour
+    
     
