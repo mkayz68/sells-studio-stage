@@ -48,4 +48,9 @@ Jeudi 30 Avril
         Reponsive sur toutes les pages effectué
         Début d'ideé front-end pour la page "notre équipe" et "nos prestations". géré en responsive aussi.
 
+Lundi 04 Mai
+    9h00 - 9h40
+        Réalisation petite urgence pour un élément graphique (menu d'un restau)
+        Approfondissement page prestation & notre équipe
+
     
