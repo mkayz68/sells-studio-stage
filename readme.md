@@ -6,7 +6,7 @@ Lundi 27 Avril :
     Ajouts d'extension (Contact Form 7, une extension personnalisé pour google maps, Solid Security)
 
 Mardi 28 Avril :
-    9h00 - 11h
+    09h00 - 11h
         Placement du logo dans le header une fois fourni
         Tentative d'installation de ma virtual machine sur Linux pour essayer de commencer Swift
         Installation de Linux Ubuntu sur Oracle VirtualBox
@@ -25,10 +25,10 @@ Mardi 28 Avril :
         modif css
 
 Mercredi 29 Avril
-    9h00 - 11h
+    09h00 - 11h00
         Création de la page Formation
         Créations de carte, visuel uniquement pour le moment. v1
-    13h - 14h30
+    13h00 - 14h30
         Fix bug médiathèque WordPress (contournement avec une extension)
         Changement des icones
     15h00 - 16h30
@@ -39,7 +39,7 @@ Mercredi 29 Avril
         Début page HTML/CSS
 
 Jeudi 30 Avril
-    9h00 - 11h45
+    09h00 - 11h45
         Création d'une page formation pour regrouper les cartes par catégories
     13h00 - 14h11
         Fin de la nouvelle page catégorie de formation ainsi que chaque single de catégorie de formation.
@@ -49,13 +49,20 @@ Jeudi 30 Avril
         Début d'ideé front-end pour la page "notre équipe" et "nos prestations". géré en responsive aussi.
 
 Lundi 04 Mai
-    9h00 - 9h40
+    09h00 - 9h40
         Réalisation petite urgence pour un élément graphique (menu d'un restau)
         Approfondissement page prestation & notre équipe
-    13h - 15h
+    13h00 - 15h00
         Créations des pages de prestation single (en attente de plus de contenu)
-    15h - 16h30
+    15h00 - 16h30
         Retouchage page d'accueil
         préparation de la BDD mise à jour
     
+Mardi 05 Mai
+    09h00 - 10h00
+        "Finalisation" de la v1, en attente du contenu réel
+    10h00 - 12h00
+        Apprentissage REACT sur mon "temps libre"
+    13h00 - 15h00
+        Apprentissage REACT
     
