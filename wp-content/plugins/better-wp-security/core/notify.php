@@ -42,7 +42,7 @@ class ITSEC_Notify {
 	 * @return array
 	 */
 	public function notification_strings() {
-		$description = esc_html__( 'During periods of heavy attack, Solid Security can generate a LOT of email.', 'better-wp-security' );
+		$description = esc_html__( 'During periods of heavy attack, Kadence Security can generate a LOT of email.', 'better-wp-security' );
 
 		if ( ITSEC_Core::is_pro() ) {
 			$features = esc_html__( 'The Security Digest reduces the number of emails sent so you can receive a summary of lockouts, file change detection scans, and privilege escalations.', 'better-wp-security' );

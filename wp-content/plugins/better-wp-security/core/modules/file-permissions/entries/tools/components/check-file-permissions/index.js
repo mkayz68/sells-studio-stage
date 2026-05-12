@@ -10,7 +10,7 @@ import { useSelect } from '@wordpress/data';
 import { __ } from '@wordpress/i18n';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Text, TextSize } from '@ithemes/ui';
 

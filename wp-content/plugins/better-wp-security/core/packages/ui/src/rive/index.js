@@ -59,7 +59,7 @@ export function RiveGraphicProvider( { preload, children } ) {
 				.then( ( buffer ) => updateState( name, buffer ) )
 				.catch( ( error ) => {
 					// eslint-disable-next-line no-console
-					console.error( `[Solid Security] Could not load rive graphic '${ name }': ${ error }` );
+					console.error( `[Kadence Security] Could not load rive graphic '${ name }': ${ error }` );
 					updateState( name, null );
 				} );
 		}

@@ -21,7 +21,7 @@ import { Button } from '@ithemes/ui';
 import { withNavigate } from '@ithemes/security-hocs';
 import { NoticeList } from '../';
 import { usePreviousPage } from '../../page-registration';
-import { StyledGraphic, StyledLogo, StyledMain, StyledMainContainer } from './styles';
+import { StyledLogo, StyledMain, StyledMainContainer } from './styles';
 
 const {
 	Fill: OnboardBackActionFill,
@@ -37,7 +37,6 @@ export default function OnboardMain( { url, render: Component } ) {
 
 	return (
 		<StyledMainContainer>
-			<StyledGraphic />
 			{ pathname !== '/onboard/site-type' && pathname !== '/onboard/summary' && (
 				<>
 					<StyledLogo />

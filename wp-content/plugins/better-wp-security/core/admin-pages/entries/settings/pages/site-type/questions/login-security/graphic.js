@@ -142,7 +142,7 @@ export const StyledLockContainer = motion.create( styled.div`
 	width: 120px;
 	height: 120px;
 	padding: 20px;
-	background-color: #6817c5;
+	background-color: #1145c9;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -150,7 +150,7 @@ export const StyledLockContainer = motion.create( styled.div`
 	z-index: 2;
 	
 	svg {
-		fill: #fbf9ff;
+		fill: #e9effc;
 	}
 ` );
 

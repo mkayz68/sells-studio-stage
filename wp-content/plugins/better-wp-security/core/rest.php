@@ -323,7 +323,7 @@ class ITSEC_REST {
 		if ( $status !== 200 ) {
 			return new WP_Error(
 				'itsec.discover.itsec-index.non-200',
-				sprintf( __( 'Solid Security REST API index returned a non-200 status code (%d).', 'better-wp-security' ), $status ),
+				sprintf( __( 'Kadence Security REST API index returned a non-200 status code (%d).', 'better-wp-security' ), $status ),
 				[ 'status' => WP_Http::BAD_REQUEST ]
 			);
 		}
@@ -333,7 +333,7 @@ class ITSEC_REST {
 		if ( ! $body || ! $itsec_data = json_decode( $body, true ) ) {
 			return new WP_Error(
 				'itsec.discover.itsec-index.empty',
-				__( 'Solid Security REST API index returned no data.', 'better-wp-security' ),
+				__( 'Kadence Security REST API index returned no data.', 'better-wp-security' ),
 				[ 'status' => WP_HTTP::BAD_REQUEST ]
 			);
 		}

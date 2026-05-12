@@ -23,7 +23,7 @@ final class ITSEC_Hide_Backend_Settings extends Config_Settings {
 		}
 
 		ITSEC_Response::add_message( $message );
-		ITSEC_Response::add_message( sprintf( __( 'Your new login URL is <strong><code>%1$s</code></strong>. A reminder has also been sent to the notification email addresses set in Solid Security’s Notification Center.', 'better-wp-security' ), esc_url( $url ) ) );
+		ITSEC_Response::add_message( sprintf( __( 'Your new login URL is <strong><code>%1$s</code></strong>. A reminder has also been sent to the notification email addresses set in Kadence Security’s Notification Center.', 'better-wp-security' ), esc_url( $url ) ) );
 		$this->send_new_login_url( $url, $enabling );
 	}
 

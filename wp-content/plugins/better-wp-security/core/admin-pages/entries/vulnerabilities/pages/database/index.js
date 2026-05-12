@@ -19,7 +19,7 @@ import {
 import { Dropdown } from '@wordpress/components';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button, Heading, Text, TextSize, TextVariant, SurfaceVariant, FiltersGroupDropdown, Surface } from '@ithemes/ui';
 

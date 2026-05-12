@@ -6,7 +6,7 @@ import { useSelect } from '@wordpress/data';
 import { Tooltip } from '@wordpress/components';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import store from '../../store';
 

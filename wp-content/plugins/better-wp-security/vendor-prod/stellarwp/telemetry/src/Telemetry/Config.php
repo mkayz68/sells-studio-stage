@@ -29,7 +29,7 @@ class Config {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @var ?\StellarWP\ContainerContract\ContainerInterface
+	 * @var ?\iThemesSecurity\Strauss\StellarWP\ContainerContract\ContainerInterface
 	 */
 	protected static $container;
 

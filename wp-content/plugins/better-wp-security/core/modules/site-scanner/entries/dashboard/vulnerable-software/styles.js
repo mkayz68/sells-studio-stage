@@ -13,7 +13,7 @@ import {
 } from '@wordpress/icons';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { List, Surface, Text } from '@ithemes/ui';
 import { VulnerabilitySuccess } from '@ithemes/security-style-guide';
@@ -100,7 +100,7 @@ export const StyledGetProText = styled.div`
 		
 		&:first-of-type {
 			font-weight: 600;
-			color: #6817c5;
+			color: #1145c9;
 		}
 	}
 `;

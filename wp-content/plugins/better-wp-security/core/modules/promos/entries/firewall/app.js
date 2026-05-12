@@ -8,7 +8,7 @@ import { external, closeSmall as dismissIcon } from '@wordpress/icons';
 import { Flex } from '@wordpress/components';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button, Heading, Text, TextSize, TextVariant, TextWeight } from '@ithemes/ui';
 
@@ -98,9 +98,9 @@ function PatchstackBanner( { installType } ) {
 				<Text
 					text={
 						installType === 'free'
-							? __( 'Rest easy at night. Upgrade to Solid Security Pro with Patchstack and reduce your WordPress website’s risk to nearly zero thanks to Patchstack’s automated Virtual Patching. Vulnerabilities are patched when your attention is elsewhere and even when a patch hasn’t been released. Go Pro.', 'better-wp-security' )
+							? __( 'Rest easy at night. Upgrade to Kadence Security Pro with Patchstack and reduce your WordPress website’s risk to nearly zero thanks to Patchstack’s automated Virtual Patching. Vulnerabilities are patched when your attention is elsewhere and even when a patch hasn’t been released. Go Pro.', 'better-wp-security' )
 							: createInterpolateElement(
-								__( 'Thank you for being an iThemes Security Pro customer. You recently upgraded to Solid Security Pro and we hope you’re enjoying all the great <a>new features</a>. For even more protection, we suggest enabling Patchstack. This automatically patches vulnerabilities when your attention is elsewhere or before a patch is even released. Purchase an additional license per site.', 'better-wp-security' ), {
+								__( 'Thank you for being an iThemes Security Pro customer. You recently upgraded to Kadence Security Pro and we hope you’re enjoying all the great <a>new features</a>. For even more protection, we suggest enabling Patchstack. This automatically patches vulnerabilities when your attention is elsewhere or before a patch is even released. Purchase an additional license per site.', 'better-wp-security' ), {
 									// eslint-disable-next-line jsx-a11y/anchor-has-content
 									a: <a href="https://go.solidwp.com/all-the-great-new-features" />,
 								}
@@ -144,15 +144,15 @@ function BeforeCreateRulePromo( { installType } ) {
 					<Text
 						variant={ TextVariant.MUTED }
 						text={ installType === 'free'
-							? __( 'We know creating Firewall Rules can be complex, but thanks to our Patchstack integration, Solid Security Pro automatically patches your website vulnerabilities with no action required. Upgrade to Pro with a Patchstack license to be protected while you sleep!', 'better-wp-security' )
-							: __( 'We know creating custom Firewall Rules can be complex, but thanks to our Patchstack integration, Solid Security automatically patches your website vulnerabilities with no action required. Upgrade to a Patchstack license and be protected while you sleep!', 'better-wp-security' )
+							? __( 'We know creating Firewall Rules can be complex, but thanks to our Patchstack integration, Kadence Security Pro automatically patches your website vulnerabilities with no action required. Upgrade to Pro with a Patchstack license to be protected while you sleep!', 'better-wp-security' )
+							: __( 'We know creating custom Firewall Rules can be complex, but thanks to our Patchstack integration, Kadence Security automatically patches your website vulnerabilities with no action required. Upgrade to a Patchstack license and be protected while you sleep!', 'better-wp-security' )
 						}
 					/>
 				</Flex>
 				<Button
 					variant="primary"
 					text={ installType === 'free'
-						? __( 'Get Solid Security Pro + Patchstack', 'better-wp-security' )
+						? __( 'Get Kadence Security Pro + Patchstack', 'better-wp-security' )
 						: __( 'Upgrade to a Patchstack License', 'better-wp-security' ) }
 					icon={ external }
 					iconPosition="right"

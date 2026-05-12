@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The Solid Security Settings Page Sidebar Widget API parent class.
+ * The Kadence Security Settings Page Sidebar Widget API parent class.
  */
 class ITSEC_Settings_Page_Sidebar_Widget {
 	/**

@@ -9,7 +9,7 @@ import styled from '@emotion/styled';
 import { SnackbarList } from '@wordpress/components';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Surface } from '@ithemes/ui';
 

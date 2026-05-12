@@ -71,7 +71,7 @@ export const StyledStellarSaleButton = styled.a`
 	text-transform: uppercase;
 	text-decoration: none;
 	border-radius: 7.8125rem;
-	background: #6817C5;
+	background: #1145C9;
 
 	&:hover, &:active, &:focus {
 		color: inherit;

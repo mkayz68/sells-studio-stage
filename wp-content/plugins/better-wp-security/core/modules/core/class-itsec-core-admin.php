@@ -55,13 +55,13 @@ class ITSEC_Core_Admin implements Runnable {
 		$url = ITSEC_Core::get_url_for_settings_route( '/settings/global#proxy' );
 		$img = plugins_url( '/core/packages/style-guide/src/assets/purple_shield.svg', ITSEC_Core::get_plugin_file() );
 
-		$text = esc_html__( 'Important: Some Solid Security features are disabled because IP Detection has not been configured.', 'better-wp-security' );
+		$text = esc_html__( 'Important: Some Kadence Security features are disabled because IP Detection has not been configured.', 'better-wp-security' );
 		$text .= sprintf( ' <a href="%s">%s</a>', esc_url( $url ), esc_html__( 'Configure Now', 'better-wp-security' ) );
 
 		printf(
 			'<div class="notice notice-error"><p style="display: flex; align-items: center; gap: 8px;"><img src="%s" alt="%s" height="40" width="40"><span>%s</span></p></div>',
 			$img,
-			__( 'Solid Security Logo', 'better-wp-security' ),
+			__( 'Kadence Security Logo', 'better-wp-security' ),
 			$text
 		);
 	}
@@ -105,12 +105,12 @@ class ITSEC_Core_Admin implements Runnable {
 			$args['plugin_logo']        = plugins_url( '/core/packages/style-guide/src/assets/logo/color.svg', ITSEC_Core::get_plugin_file() );
 			$args['plugin_logo_width']  = 260;
 			$args['plugin_logo_height'] = 40;
-			$args['plugin_logo_alt']    = __( 'Solid Security Logo', 'better-wp-security' );
+			$args['plugin_logo_alt']    = __( 'Kadence Security Logo', 'better-wp-security' );
 			$args['plugin_name']        = ITSEC_Core::get_plugin_name();
 			$args['permissions_url']    = 'https://go.solidwp.com/opt-in-usage-sharing';
 			$args['tos_url']            = 'https://go.solidwp.com/solid-security-terms-usage-modal';
 			$args['privacy_url']        = 'https://go.solidwp.com/solid-security-privacy-usage-modal';
-			$args['heading']            = __( 'Help us improve Solid Security.', 'better-wp-security' );
+			$args['heading']            = __( 'Help us improve Kadence Security.', 'better-wp-security' );
 			$args['intro']              = $this->get_telemetry_intro();
 		}
 
@@ -147,7 +147,7 @@ class ITSEC_Core_Admin implements Runnable {
 		}
 
 		$info['solid-security'] = [
-			'label'  => __( 'Solid Security', 'better-wp-security' ),
+			'label'  => __( 'Kadence Security', 'better-wp-security' ),
 			'fields' => [
 				'pro'           => [
 					'label' => __( 'Install Type', 'better-wp-security' ),
@@ -191,12 +191,12 @@ class ITSEC_Core_Admin implements Runnable {
 		/* translators: 1. The user's name. */
 		return sprintf(
 			esc_html__(
-				'Hi %s, SolidWP is dedicated to delivering top-notch services, and your input helps us deliver on that promise.
-				 By opting into our feedback program, you help enhance the Solid Security experience for yourself and all of our users.
+				'Hi %s, Kadence is dedicated to delivering top-notch services, and your input helps us deliver on that promise.
+				 By opting into our feedback program, you help enhance the Kadence Security experience for yourself and all of our users.
 				 When you opt in, you allow us to access certain data related to how you use our products, which we use responsibly to tailor our products to your needs.
 				 You will additionally receive updates, important product and marketing information, and exclusive offers via email. You may unsubscribe at any time.
 				 We take data privacy seriously and adhere to the highest standards respecting all relevant regulations and guidelines.
-				 To join and help shape the future of Solid Security and StellarWP, simply click “Allow & Continue” below.',
+				 To join and help shape the future of Kadence Security and Liquid Web, simply click “Allow & Continue” below.',
 				'better-wp-security'
 			),
 			wp_get_current_user()->display_name

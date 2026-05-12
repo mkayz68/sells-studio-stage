@@ -11,7 +11,7 @@ export const StyledPriorityDescription = styled.span`
 export const StyledCompactContainer = styled.div`
 	background-color: ${ ( { priority } ) => priority === 'low' && '#e7e7e7' };
 	background-color: ${ ( { priority } ) => priority === 'medium' && '#ffcb2f' };
-	background-color: ${ ( { priority } ) => priority === 'high' && '#d63638' };
+	background-color: ${ ( { priority } ) => priority === 'high' && '#d12502' };
 	color: ${ ( { priority } ) => priority === 'low' && '#232323' };
 	color: ${ ( { priority } ) => priority === 'medium' && '#232323' };
 	color: ${ ( { priority } ) => priority === 'high' && '#ffffff' };
@@ -27,13 +27,13 @@ export const StyledCompactContainer = styled.div`
 
 export const StyledExtendContainer = styled.div`
 	background-color: ${ ( { priority } ) => priority === 'low' && '#e7e7e7' };
-	background-color: ${ ( { priority } ) => priority === 'medium' && '#fffbef' };
-	background-color: ${ ( { priority } ) => priority === 'high' && '#fcf0f1' };
+	background-color: ${ ( { priority } ) => priority === 'medium' && '#fcf4e8' };
+	background-color: ${ ( { priority } ) => priority === 'high' && '#fae9e6' };
 	color: ${ ( { priority } ) => priority === 'low' && '#232323' };
 	color: ${ ( { priority } ) => priority === 'medium' && '#FFCB2F' };
-	color: ${ ( { priority } ) => priority === 'high' && '#D63638' };
-	border: ${ ( { priority } ) => priority === 'medium' && '1px solid #ffc518' };
-	border: ${ ( { priority } ) => priority === 'high' && '1px solid #d63638' };
+	color: ${ ( { priority } ) => priority === 'high' && '#D12502' };
+	border: ${ ( { priority } ) => priority === 'medium' && '1px solid #e86230' };
+	border: ${ ( { priority } ) => priority === 'high' && '1px solid #d12502' };
 	display: flex;
 	align-items: center;
 	justify-content: center;

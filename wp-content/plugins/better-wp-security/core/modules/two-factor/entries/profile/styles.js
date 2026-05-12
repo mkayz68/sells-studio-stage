@@ -4,7 +4,7 @@
 import styled from '@emotion/styled';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Heading } from '@ithemes/ui';
 

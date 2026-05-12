@@ -13,7 +13,7 @@ import { Flex, Icon, Tooltip } from '@wordpress/components';
 import { useReducedMotion } from '@wordpress/compose';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Text, TextVariant } from '@ithemes/ui';
 
@@ -59,7 +59,7 @@ export default function Firewall( { question, onAnswer, isAnswering } ) {
 					onChange={ ( next ) => setState( { ...state, 'network-brute-force': next } ) }
 					recommended
 				>
-					<Tooltip text={ __( 'Enabling this will send data about login attempts to SolidWP servers.', 'better-wp-security' ) }>
+					<Tooltip text={ __( 'Enabling this will send data about login attempts to Kadence servers.', 'better-wp-security' ) }>
 						<span style={ { lineHeight: 0 } }><Icon icon={ tooltipIcon } /></span>
 					</Tooltip>
 				</FeatureToggle>

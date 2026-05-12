@@ -11,7 +11,7 @@ import { store as preferencesStore } from '@wordpress/preferences';
 import { __ } from '@wordpress/i18n';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Notice } from '@ithemes/ui';
 

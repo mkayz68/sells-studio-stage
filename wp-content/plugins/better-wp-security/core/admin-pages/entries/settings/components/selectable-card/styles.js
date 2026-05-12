@@ -46,10 +46,11 @@ export const StyledIconContainer = styled( Surface )`
 	align-items: center;
 	justify-content: center;
 	border-radius: 2px;
+	background: #F5F9FF;
 `;
 
 export const StyledIcon = styled( Icon )`
-	fill: #9675F7;
+	fill: #1145C9;
 `;
 
 export const StyledGoIcon = styled( Icon )`
@@ -58,7 +59,7 @@ export const StyledGoIcon = styled( Icon )`
 `;
 
 export const StyledSelectableCard = styled.div`
-	background: #f6f7f7;
+	background: #fff;
 	border: 1px solid ${ ( { theme } ) => theme.colors.border.normal };
 	border-radius: 2px;
 	display: ${ ( { direction } ) => direction === 'horizontal' ? 'grid' : 'flex' };

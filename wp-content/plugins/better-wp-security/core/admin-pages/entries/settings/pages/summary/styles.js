@@ -16,7 +16,6 @@ import { List, Button, Surface } from '@ithemes/ui';
 /**
  * Internal dependencies
  */
-import { LightGrayShieldInline } from '@ithemes/security-style-guide';
 
 export const StyledSummary = styled.div`
 	max-width: 900px;
@@ -43,14 +42,6 @@ export const StyledFeatures = styled.div`
 	border: 1px solid ${ ( { theme } ) => theme.colors.border.normal };
 	border-radius: 2px;
 	box-shadow: 0 4px 8px 0 #00000033;
-	background: no-repeat url("${ LightGrayShieldInline }");
-	background-position: right -40px top -35px;
-	background-size: 180px;
-
-	@media screen and (min-width: ${ ( { theme } ) => theme.breaks.small }px ) {
-		background-position: right -50% center;
-		background-size: 65%;
-	}
 `;
 
 export const StyledFeaturesLayout = styled( Flex )`

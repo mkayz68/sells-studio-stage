@@ -1,9 +1,13 @@
 .custom-form {
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid #e0e0e0;
     border-radius: 10px;
     width: 450px;
+    padding: 6px 8px;
 }
 
 .custom-textarea {
+    border: 1px solid #e0e0e0;
     border-radius: 10px;
     width: 450px;
     resize: none;
@@ -14,8 +18,9 @@ iframe {
 }
 
 .custom-submit {
+    margin-top: 5px;
     height: 50px;
-    border-radius: 40px;
+    border-radius: 10px;
     background-color: #EC2758;
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -30,4 +35,64 @@ iframe {
 
 .custom-submit:hover {
     transform: scale(1.05);
+}
+
+/* Applique la couleur blanche au texte du footer*/
+.agencyb-footer-1-title {
+    color: white !important;
+}
+
+/* Change la background color du footer pour avoir un petit gradient */
+#section-9-11 {
+    background: linear-gradient(360deg, #00122d 0%, #001f4d 100%);
+}
+
+.oxy-read-more {
+    border-radius: 10px !important;
+}
+
+/* Cache les flèches des input number sur tous les navigateurs */
+#n_siret::-webkit-outer-spin-button,
+#n_siret::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#n_siret {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+/* Modifie l'allure des champs d'inscriptions pour les écran de taille normale */
+@media (min-width: 1200px) {
+
+    /* La card s'élargit pour accueillir les deux colonnes */
+    .user-registration.ur-frontend-form {
+        max-width: 900px !important;
+    }
+
+    /* Le form devient flex pour mettre les deux rows côte à côte */
+    .user-registration.ur-frontend-form .register {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 0 60px !important;
+        align-items: center !important;
+    }
+
+    /* Chaque row prend une colonne */
+    .user-registration.ur-frontend-form .ur-form-row {
+        flex: 1 !important;
+    }
+
+    /* Les inputs prennent toute la largeur de leur colonne */
+    .user-registration.ur-frontend-form .input-text,
+    .user-registration.ur-frontend-form .input-email,
+    .user-registration.ur-frontend-form .input-password {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Le bouton passe en dessous sur toute la largeur */
+    .user-registration.ur-frontend-form .ur-button-container {
+        width: 100% !important;
+    }
+
 }

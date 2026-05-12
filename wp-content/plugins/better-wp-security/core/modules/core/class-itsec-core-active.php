@@ -408,7 +408,7 @@ class ITSEC_Core_Active implements Runnable {
 				if ( ! file_exists( WP_CONTENT_DIR . '/plugins/' . $basename ) ) {
 					return Result::error( new WP_Error(
 						'itsec.tool.create-mu-plugin.unknown-installation',
-						__( 'Could not determine the correct path to load Solid Security.', 'better-wp-security' )
+						__( 'Could not determine the correct path to load Kadence Security.', 'better-wp-security' )
 					) );
 				}
 

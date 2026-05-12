@@ -1,6 +1,6 @@
 <?php
 /**
- * Solid Security utility function library.
+ * Kadence Security utility function library.
  *
  * Contains the ITSEC_Lib_Utility class.
  *
@@ -9,7 +9,7 @@
 
 if ( ! class_exists( 'ITSEC_Lib_Utility' ) ) {
 	/**
-	 * Solid Security Utility Library class.
+	 * Kadence Security Utility Library class.
 	 *
 	 * Various utility functions.
 	 *

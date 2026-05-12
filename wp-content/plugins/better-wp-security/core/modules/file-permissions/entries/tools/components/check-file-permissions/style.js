@@ -8,7 +8,7 @@ import styled from '@emotion/styled';
  */
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Surface, Text } from '@ithemes/ui';
 
@@ -20,10 +20,10 @@ export const StyledFilePermissionsToolSurface = styled( Surface )`
 `;
 
 export const StyledCheckFilePermissionsToolTable = styled.table`
-	border: 1px solid #dddddd;
+	border: 1px solid #d4d4d4;
 `;
 
 export const StyledCheckFilePermissionsToolTH = styled( Text )`
-	border-bottom: 1px solid #dddddd;
+	border-bottom: 1px solid #d4d4d4;
 	border-top: none !important;
 `;

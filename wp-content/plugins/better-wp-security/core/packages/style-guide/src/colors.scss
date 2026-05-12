@@ -12,7 +12,7 @@ $border-color: #E5EAEE;
 
 $popover-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 
-$destructive: #cc1818;
+$destructive: #d12502;
 
 // Hugos new WordPress shades of gray, from http://codepen.io/hugobaeta/pen/grJjVp.
 $black: #000;
@@ -98,60 +98,60 @@ $blue-medium-focus: #007cba;
 $alert-yellow: #f0b849;
 $alert-orange: #f78b53;
 $alert-red: #d94f4f;
-$alert-green: #4ab866;
+$alert-green: #1145c9;
 $alert-blue: $blue-medium-500;
 
 
 // Rebrand colors.
 // Primary Colors
-$solid-wp-primary-base: #6817c5;
-$solid-wp-primary-darker10: #53129e;
-$solid-wp-primary-darker20: #49108A;
+$kadence-primary-base: #1145c9;
+$kadence-primary-darker10: #0e38a3;
+$kadence-primary-darker20: #0A2D7D;
 
 // Secondary Colors
-$solid-wp-secondary-base: #9e6ada;
-$solid-wp-secondary-darker10: #9258d6;
-$solid-wp-secondary-darker20: #8645d1;
+$kadence-secondary-base: #5f95ed;
+$kadence-secondary-darker10: #2b69e3;
+$kadence-secondary-darker20: #1145c9;
 
 // Text Colors
-$solid-wp-text-color-dark: #232323;
-$solid-wp-text-color-normal: #232323;
-$solid-wp-text-color-muted: #858585;
-$solid-wp-text-color-accent: #6817C5;
-$solid-wp-text-color-white: #FFFFFF;
-$solid-wp-text-color-danger: #551515;
-$solid-wp-text-color-warning: #A9582E;
-$solid-wp-text-color-info: #005169;
-$solid-wp-text-color-success: #237739;
+$kadence-text-color-dark: #232323;
+$kadence-text-color-normal: #232323;
+$kadence-text-color-muted: #858585;
+$kadence-text-color-accent: #1145C9;
+$kadence-text-color-white: #FFFFFF;
+$kadence-text-color-danger: #D12502;
+$kadence-text-color-warning: #E86230;
+$kadence-text-color-info: #2060E0;
+$kadence-text-color-success: #1145C9;
 
 // Border Colors
-$solid-wp-border-normal: #dddddd;
-$solid-wp-border-input: #757575;
+$kadence-border-normal: #d4d4d4;
+$kadence-border-input: #757575;
 
 // Surface Colors
-$solid-wp-surface-primary: #FFFFFF;
-$solid-wp-surface-secondary: #E7E7E7;
-$solid-wp-surface-tertiary: #F9F9F9;
-$solid-wp-surface-underPage: #F0F0F0;
-$solid-wp-surface-primaryAccent: #6817C5;
-$solid-wp-surface-danger: #F7ABAB;
-$solid-wp-surface-warning: #FDDDCD;
-$solid-wp-surface-info: #ECFAFF;
-$solid-wp-surface-success: #DDF1E2;
-$solid-wp-surface-dark: #051F30;
+$kadence-surface-primary: #FFFFFF;
+$kadence-surface-secondary: #E7E7E7;
+$kadence-surface-tertiary: #F5F5F5;
+$kadence-surface-underPage: #F5F5F5;
+$kadence-surface-primaryAccent: #1145C9;
+$kadence-surface-danger: #FAE9E6;
+$kadence-surface-warning: #FCF4E8;
+$kadence-surface-info: #E9EFFC;
+$kadence-surface-success: #E9EFFC;
+$kadence-surface-dark: #333333;
 
 // Text Sizes
-$solid-wp-text-size-gigantic: 2rem;
-$solid-wp-text-size-huge: 1.5rem;
-$solid-wp-text-size-extraLarge: 1.25rem;
-$solid-wp-text-size-large: 1rem;
-$solid-wp-text-size-normal: 0.813rem;
-$solid-wp-text-size-small: 0.75rem;
+$kadence-text-size-gigantic: 2rem;
+$kadence-text-size-huge: 1.5rem;
+$kadence-text-size-extraLarge: 1.25rem;
+$kadence-text-size-large: 1rem;
+$kadence-text-size-normal: 0.813rem;
+$kadence-text-size-small: 0.75rem;
 
 // Height Sizes
-$solid-wp-height-gigantic: 2.5rem;
-$solid-wp-height-huge: 2rem;
-$solid-wp-height-extraLarge: 1.75rem;
-$solid-wp-height-large: 1.5rem;
-$solid-wp-height-normal: 1.4rem;
-$solid-wp-height-small: 1.4rem;
+$kadence-height-gigantic: 2.5rem;
+$kadence-height-huge: 2rem;
+$kadence-height-extraLarge: 1.75rem;
+$kadence-height-large: 1.5rem;
+$kadence-height-normal: 1.4rem;
+$kadence-height-small: 1.4rem;

@@ -3,8 +3,8 @@
   "status": "always-active",
   "load": "early",
   "title": "Global Settings",
-  "description": "Configure basic settings that control how Solid Security functions.",
-  "help": "Changes made here are applied globally throughout Solid Security’s settings. For example, the lockout settings and messages are used by all of Solid Security’s lockout features.",
+  "description": "Configure basic settings that control how Kadence Security functions.",
+  "help": "Changes made here are applied globally throughout Kadence Security’s settings. For example, the lockout settings and messages are used by all of Kadence Security’s lockout features.",
   "type": "recommended",
   "tools": {
     "identify-server-ips": {
@@ -23,8 +23,8 @@
   "user-groups": {
     "manage_group": {
       "type": "multiple",
-      "title": "Manage Solid Security",
-      "description": "Allow users to manage Solid Security."
+      "title": "Manage Kadence Security",
+      "description": "Allow users to manage Kadence Security."
     }
   },
   "settings": {
@@ -34,7 +34,7 @@
         "type": "boolean",
         "default": true,
         "title": "Write to Files",
-        "description": "Allow Solid Security to write to wp-config.php and .htaccess automatically. If this box is not checked, you will need to edit those files manually."
+        "description": "Allow Kadence Security to write to wp-config.php and .htaccess automatically. If this box is not checked, you will need to edit those files manually."
       },
       "nginx_file": {
         "type": "string",
@@ -55,7 +55,7 @@
         "minimum": 0,
         "default": 7,
         "title": "Days to Remember Lockouts",
-        "description": "How many days should Solid Security remember a lockout? This does not affect the logs generated when creating a lockout."
+        "description": "How many days should Kadence Security remember a lockout? This does not affect the logs generated when creating a lockout."
       },
       "blacklist": {
         "type": "boolean",
@@ -68,7 +68,7 @@
         "minimum": 0,
         "default": 3,
         "title": "Ban Threshold",
-        "description": "The number of lockouts Solid Security must remember before permanently banning the attacker."
+        "description": "The number of lockouts Kadence Security must remember before permanently banning the attacker."
       },
       "lockout_message": {
         "type": "string",
@@ -87,15 +87,15 @@
       "community_lockout_message": {
         "type": "string",
         "format": "html",
-        "default": "Your IP address has been flagged as a threat by the Solid Security network.",
+        "default": "Your IP address has been flagged as a threat by the Kadence Security network.",
         "title": "Community Lockout Message",
-        "description": "The message to display to a user when their IP has been flagged as suspicious by the SolidWP network."
+        "description": "The message to display to a user when their IP has been flagged as suspicious by the Kadence network."
       },
       "automatic_temp_auth": {
         "type": "boolean",
         "default": true,
         "title": "Automatically Temporarily Authorize IPs",
-        "description": "Whenever an administrator user accesses the website, Solid Security will prevent their last used IP from being locked out for 24 hours."
+        "description": "Whenever an administrator user accesses the website, Kadence Security will prevent their last used IP from being locked out for 24 hours."
       },
       "lockout_white_list": {
         "type": "array",
@@ -104,7 +104,7 @@
         },
         "default": [],
         "title": "Authorized IPs",
-        "description": "Enter a list of IP addresses that should not be locked out by Solid Security.",
+        "description": "Enter a list of IP addresses that should not be locked out by Kadence Security.",
         "keywords": [
           "whitelist"
         ]
@@ -133,7 +133,7 @@
         ],
         "default": "database",
         "title": "How should event logs be kept",
-        "description": "Solid Security can log events in two different ways. Each has advantages and disadvantages. Database Only logs puts all events in the database with your posts and other WordPress data. This makes it easy to retrieve and process that information, but it can slow down your site if the log table gets very large. File Only logging is very fast, but the plugin does not process the logs itself. That would take far more server resources. For most users or smaller sites, Database Only logging should be fine. If you have a very large site or log processing software, then File Only might be a better option."
+        "description": "Kadence Security can log events in two different ways. Each has advantages and disadvantages. Database Only logs puts all events in the database with your posts and other WordPress data. This makes it easy to retrieve and process that information, but it can slow down your site if the log table gets very large. File Only logging is very fast, but the plugin does not process the logs itself. That would take far more server resources. For most users or smaller sites, Database Only logging should be fine. If you have a very large site or log processing software, then File Only might be a better option."
       },
       "log_rotation": {
         "type": "integer",
@@ -160,7 +160,7 @@
         "type": "string",
         "default": "automatic",
         "title": "Proxy Detection",
-        "description": "Configure the method Solid Security uses to identify the IP address of your site’s visitors and users. Choose “Security Check Scan” to allow Solid Security to automatically configure the correct method. When this setting is configured incorrectly, key firewall features will not work properly.<br>[Read more about IP Detection](https://go.solidwp.com/about-ip-detection)."
+        "description": "Configure the method Kadence Security uses to identify the IP address of your site’s visitors and users. Choose “Security Check Scan” to allow Kadence Security to automatically configure the correct method. When this setting is configured incorrectly, key firewall features will not work properly.<br>[Read more about IP Detection](https://go.solidwp.com/about-ip-detection)."
       },
       "proxy_header": {
         "type": "string",
@@ -172,19 +172,19 @@
         "type": "boolean",
         "default": false,
         "title": "Hide Security Menu in Admin Bar",
-        "description": "Remove the Security Messages Menu from the Admin Bar. Notifications will only appear on the Solid Security dashboard and settings pages."
+        "description": "Remove the Security Messages Menu from the Admin Bar. Notifications will only appear on the Kadence Security dashboard and settings pages."
       },
       "allow_tracking": {
         "type": "boolean",
         "default": false,
         "title": "Allow Data Sharing",
-        "description": "If you opt-in, some data about your usage of this plugin and future StellarWP Products will be shared with our teams (so they can work their butts off to improve). We will also share some helpful info on WordPress, and our products from time to time. If you don't opt in, that's okay! Our products still work just fine.<br>[Read more about usage sharing](https://go.solidwp.com/opt-in-usage-sharing)."
+        "description": "Want to help shape the future of Kadence Security? Opting in shares anonymous usage data with our team at Liquid Web, the company behind Kadence Security, giving us the insights we need to keep improving the tools you rely on.<br>[Read more about usage sharing](https://go.solidwp.com/opt-in-usage-sharing)."
       },
       "show_error_codes": {
         "type": "boolean",
         "default": false,
         "title": "Show Error Codes",
-        "description": "Each error message in Solid Security has an associated error code that can help diagnose an issue. Changing this setting to “Yes” causes these codes to be displayed. This setting should be left set to “No” unless Solid Security's customer success team requests that you change it.",
+        "description": "Each error message in Kadence Security has an associated error code that can help diagnose an issue. Changing this setting to “Yes” causes these codes to be displayed. This setting should be left set to “No” unless Kadence Security's customer success team requests that you change it.",
         "readonly": true
       },
       "build": {

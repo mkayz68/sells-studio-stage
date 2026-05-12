@@ -6,7 +6,7 @@ import { chevronLeftSmall, chevronRightSmall } from '@wordpress/icons';
 import { __ } from '@wordpress/i18n';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button } from '@ithemes/ui';
 

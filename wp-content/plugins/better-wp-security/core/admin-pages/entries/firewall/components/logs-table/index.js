@@ -9,7 +9,7 @@ import { useDispatch, useSelect } from '@wordpress/data';
 import { Tooltip } from '@wordpress/components';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import {
 	Button,
@@ -315,7 +315,7 @@ function EmptyState( { isSmall } ) {
 			<td colSpan={ isSmall ? 2 : 5 }>
 				{ logTypeFile ? (
 					<StyledNoResultsContainer>
-						<StyledNotice text={ __( 'To view logs inside Solid Security, you must enable database logging in Global Settings.', 'better-wp-security' ) } />
+						<StyledNotice text={ __( 'To view logs inside Kadence Security, you must enable database logging in Global Settings.', 'better-wp-security' ) } />
 					</StyledNoResultsContainer>
 				) : (
 					<StyledEmptyState>

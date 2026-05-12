@@ -9,7 +9,7 @@ import styled from '@emotion/styled';
 import { Modal } from '@wordpress/components';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Text } from '@ithemes/ui';
 
@@ -82,5 +82,5 @@ export const StyledRowContent = styled.div`
 `;
 
 export const StyledRequestMethod = styled( Text )`
-	color: #D63638;
+	color: #D12502;
 `;

@@ -5,7 +5,7 @@ import { __ } from '@wordpress/i18n';
 import { useDispatch, useSelect } from '@wordpress/data';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import {
 	Heading,

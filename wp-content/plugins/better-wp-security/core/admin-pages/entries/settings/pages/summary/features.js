@@ -6,7 +6,7 @@ import { key } from '@wordpress/icons';
 import { createInterpolateElement } from '@wordpress/element';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import {
 	Heading,
@@ -33,7 +33,7 @@ const basicFeatures = [
 		{ b: <Text weight={ 700 } /> }
 	),
 	createInterpolateElement(
-		__( '<b>Virtual Patches</b> from <b>Patchstack</b> that protect insecure themes and plugins even before vulnerabilities are publicly disclosed and an official patch is released. You may not be able to apply security updates immediately, but with Solid Security Pro you’re still protected until you’re ready to update.', 'better-wp-security' ),
+		__( '<b>Virtual Patches</b> from <b>Patchstack</b> that protect insecure themes and plugins even before vulnerabilities are publicly disclosed and an official patch is released. You may not be able to apply security updates immediately, but with Kadence Security Pro you’re still protected until you’re ready to update.', 'better-wp-security' ),
 		{ b: <Text weight={ 700 } /> }
 	),
 	createInterpolateElement(
@@ -70,8 +70,8 @@ export default function Features( { installType } ) {
 					size={ TextSize.EXTRA_LARGE }
 					variant={ TextVariant.ACCENT }
 					text={ installType === 'free'
-						? __( 'Reduce your site’s security risk to nearly zero with Solid Security Pro.', 'better-wp-security' )
-						: __( 'Greatly enhance your website’s security with Solid Security Pro.', 'better-wp-security' ) }
+						? __( 'Reduce your site’s security risk to nearly zero with Kadence Security Pro.', 'better-wp-security' )
+						: __( 'Greatly enhance your website’s security with Kadence Security Pro.', 'better-wp-security' ) }
 				/>
 				<Text
 					variant={ TextVariant.MUTED }
@@ -98,7 +98,7 @@ export default function Features( { installType } ) {
 						<StyledUpgradeButton
 							href="https://go.solidwp.com/go-pro-onboarding"
 							variant="primary"
-							text={ __( 'Upgrade to Solid Security Pro', 'better-wp-security' ) }
+							text={ __( 'Upgrade to Kadence Security Pro', 'better-wp-security' ) }
 						/>
 					)
 					: <Text variant={ TextVariant.MUTED } text={ __( 'and more!', 'better-wp-security' ) } /> }

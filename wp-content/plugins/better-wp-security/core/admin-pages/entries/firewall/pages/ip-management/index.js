@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
 import { useSelect } from '@wordpress/data';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import {
 	Heading,

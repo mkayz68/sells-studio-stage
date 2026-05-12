@@ -50,7 +50,7 @@ final class Ecommerce implements Templating_Site_Type {
 	public function make_prompt( string $question_id ): string {
 		switch ( $question_id ) {
 			case Question::SCAN_SITE:
-				return __( 'Before we configure Solid Security, let’s scan your store for vulnerabilities…', 'better-wp-security' );
+				return __( 'Before we configure Kadence Security, let’s scan your store for vulnerabilities…', 'better-wp-security' );
 			case Question::SELECT_END_USERS:
 				return __( 'Select your customers', 'better-wp-security' );
 			case Question::END_USERS_TWO_FACTOR:

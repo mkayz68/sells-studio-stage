@@ -9,7 +9,7 @@ import styled from '@emotion/styled';
 import { Dropdown, Modal } from '@wordpress/components';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import {
 	Text,

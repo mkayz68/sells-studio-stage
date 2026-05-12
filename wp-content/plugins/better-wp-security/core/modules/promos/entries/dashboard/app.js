@@ -88,7 +88,7 @@ function BlackFridayCyberMondayBanner( { installType } ) {
 						level={ 2 }
 						variant={ TextVariant.WHITE }
 						weight={ TextWeight.HEAVY }
-						text={ __( 'Save 40% on SolidWP', 'better-wp-security' ) }
+						text={ __( 'Save 40% on Kadence', 'better-wp-security' ) }
 					/>
 					<StyledBFCMText
 						variant={ TextVariant.WHITE }

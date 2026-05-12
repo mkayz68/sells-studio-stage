@@ -10,7 +10,7 @@ class Site_Scan_Question extends Templated_Question {
 	}
 
 	protected function get_prompt_fallback(): string {
-		return __( 'Before we configure Solid Security, let’s scan your site for vulnerabilities…', 'better-wp-security' );
+		return __( 'Before we configure Kadence Security, let’s scan your site for vulnerabilities…', 'better-wp-security' );
 	}
 
 	public function get_description(): string {

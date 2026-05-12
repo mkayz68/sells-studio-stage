@@ -1,5 +1,5 @@
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import {
 	SurfaceVariant,

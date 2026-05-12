@@ -6,12 +6,12 @@
     & thead th {
         padding-top: var(--itsec-table-spacing);
         padding-bottom: var(--itsec-table-spacing);
-        color: $solid-wp-text-color-normal;
+        color: $kadence-text-color-normal;
         text-transform: uppercase;
         font-weight: normal;
-        background: $solid-wp-surface-tertiary;
+        background: $kadence-surface-tertiary;
         @if $use_th_border_top {
-            border-top: 1px solid $solid-wp-border-normal;
+            border-top: 1px solid $kadence-border-normal;
         }
     }
 
@@ -19,7 +19,7 @@
     :where(&) td {
         text-align: left;
         padding: var(--itsec-table-spacing);
-        border-bottom: 1px solid $solid-wp-border-normal;
+        border-bottom: 1px solid $kadence-border-normal;
     }
 
     :where(&) tbody th {
@@ -39,7 +39,7 @@
     & thead th {
         position: sticky;
         top: 0;
-        background: $solid-wp-surface-tertiary;
+        background: $kadence-surface-tertiary;
     }
 }
 
@@ -65,7 +65,7 @@
 
     padding: .5em 1em;
     background: $alternate;
-    color: $solid-wp-text-color-normal;
+    color: $kadence-text-color-normal;
     transition: background-color 300ms, color 150ms;
 
     &:hover {

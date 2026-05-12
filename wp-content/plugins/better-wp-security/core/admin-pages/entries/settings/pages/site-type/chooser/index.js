@@ -52,7 +52,7 @@ export default function SiteTypeChooser() {
 			<Text
 				as="p"
 				size={ TextSize.EXTRA_LARGE }
-				text={ __( 'Welcome to Solid Security! Answer a few questions to quickly enable the most important security features for this website. You can always change settings later.', 'better-wp-security' ) }
+				text={ __( 'Welcome to Kadence Security! Answer a few questions to quickly enable the most important security features for this website. You can always change settings later.', 'better-wp-security' ) }
 			/>
 
 			<OnboardSiteTypeBeforeSlot />
@@ -64,7 +64,7 @@ export default function SiteTypeChooser() {
 						<Text>
 							{ createInterpolateElement(
 								__(
-									'Already started setting up Solid Security? <a>Resume</a> from where you left off.',
+									'Already started setting up Kadence Security? <a>Resume</a> from where you left off.',
 									'better-wp-security'
 								),
 								{

@@ -5,15 +5,15 @@ use iThemesSecurity\User_Groups;
 use iThemesSecurity\Lib;
 
 /**
- * Solid Security Core.
+ * Kadence Security Core.
  *
- * Core class for Solid Security sets up globals and other items and dispatches modules.
+ * Core class for Kadence Security sets up globals and other items and dispatches modules.
  *
  * @since   4.0
  *
  * @package iThemes_Security
  *
- * @global array  $itsec_globals Global variables for use throughout Solid Security.
+ * @global array  $itsec_globals Global variables for use throughout Kadence Security.
  * @global object $itsec_lockout Class for handling lockouts.
  *
  */
@@ -216,7 +216,7 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 
 					echo '<div class="notice notice-error">';
 					echo '<p>';
-					esc_html_e( 'Cannot run Solid Security. Error encountered during setup. Please try deactivating and reactivating Solid Security. Contact support if the error persists.', 'better-wp-security' );
+					esc_html_e( 'Cannot run Kadence Security. Error encountered during setup. Please try deactivating and reactivating Kadence Security. Contact support if the error persists.', 'better-wp-security' );
 					echo '</p>';
 
 					echo '<ol>';
@@ -731,11 +731,11 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 		public static function get_plugin_name() {
 			$self = self::get_instance();
 
-			return $self->plugin_name;
+			return apply_filters( 'itsec_plugin_name', $self->plugin_name );
 		}
 
 		/**
-		 * Is this an Solid Security Pro installation.
+		 * Is this an Kadence Security Pro installation.
 		 *
 		 * This value is not cached.
 		 *
@@ -774,6 +774,16 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 
 			if ( ! isset( $GLOBALS['ithemes_updater_path'] ) ) {
 				return false;
+			}
+
+			if ( file_exists( $GLOBALS['ithemes_updater_path'] . '/harbor.php' ) ) {
+				include_once( $GLOBALS['ithemes_updater_path'] . '/harbor.php' );
+			}
+
+			if ( class_exists( 'Ithemes_Updater_Harbor' )
+			     && Ithemes_Updater_Harbor::is_product_managed( 'ithemes-security-pro' )
+			) {
+				return true;
 			}
 
 			include_once( $GLOBALS['ithemes_updater_path'] . '/keys.php' );
@@ -815,7 +825,8 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 		}
 
 		/**
-		 * Gets the URL Solid Security was licensed for.
+		 * Gets the URL Kadence Security was licensed for.
+		 * The method uses legacy iTheme Updater API and should not be used for Liquid Web license flow.
 		 *
 		 * @return string
 		 */
@@ -1295,7 +1306,7 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 		}
 
 		/**
-		 * Checks if Solid Security is in development mode.
+		 * Checks if Kadence Security is in development mode.
 		 *
 		 * @return bool
 		 */
@@ -1307,7 +1318,7 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 		 * Check to see if the define to disable all active modules is set.
 		 *
 		 * Note that the ITSEC_DISABLE_MODULES should only be used to gain access to a site that you are locked out of.
-		 * Once logged in, you should remove the define to re-enable the protections offered by Solid Security.
+		 * Once logged in, you should remove the define to re-enable the protections offered by Kadence Security.
 		 *
 		 * @return bool true if the define is set to a truthy value, false otherwise.
 		 */

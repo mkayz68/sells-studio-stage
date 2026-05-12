@@ -66,7 +66,7 @@ class ITSEC_File_Change_Package_Factory {
 		);
 
 		/**
-		 * The list of files that Solid Security manages.
+		 * The list of files that Kadence Security manages.
 		 *
 		 * @param string[] $files
 		 */

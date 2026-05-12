@@ -74,7 +74,7 @@
         "type": "boolean",
         "default": true,
         "title": "Compare Files Online",
-        "description": "When any WordPress core file or file in a SolidWP plugin has been changed on your system, this feature will compare it with the version on WordPress.org or SolidWP (as appropriate) to determine if the change was malicious. Currently this feature only works with WordPress core files, plugins on the WordPress.org directory and SolidWP plugins (plugins and themes from other sources will be added as available)."
+        "description": "When any WordPress core file or file in a Kadence plugin has been changed on your system, this feature will compare it with the version on WordPress.org or Kadence (as appropriate) to determine if the change was malicious. Currently this feature only works with WordPress core files, plugins on the WordPress.org directory and Kadence plugins (plugins and themes from other sources will be added as available)."
       },
       "expected_hashes": {
         "type": "object",

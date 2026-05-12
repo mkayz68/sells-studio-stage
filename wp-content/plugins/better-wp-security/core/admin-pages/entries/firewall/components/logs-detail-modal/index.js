@@ -5,7 +5,7 @@ import { __ } from '@wordpress/i18n';
 import { dateI18n } from '@wordpress/date';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Text, TextSize, TextVariant } from '@ithemes/ui';
 

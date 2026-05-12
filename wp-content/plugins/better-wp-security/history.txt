@@ -1136,3 +1136,6 @@
 	Enhancement: Update Patchstack details for existing vulnerabilities.
 9.4.7 - 2026-03-30 - Rahula Palu
 	Bug Fix: Prevent email retry loops by ensuring the scheduled notification properties are saved.
+10.0.0 - 2026-05-11 - Nexcess
+	Tweak: Updated branding from SolidWP to Kadence.
+	New: QR code for 2FA is generated locally by default (the GD PHP extension is required), with a Kadence Security-hosted solution as a fallback.

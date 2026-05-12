@@ -9,7 +9,7 @@ class ITSEC_Lib_REST {
 	private const P_30_DAYS = '30-days';
 
 	/**
-	 * Get the URI for an Solid Security link relation.
+	 * Get the URI for an Kadence Security link relation.
 	 *
 	 * @param string $relation
 	 *

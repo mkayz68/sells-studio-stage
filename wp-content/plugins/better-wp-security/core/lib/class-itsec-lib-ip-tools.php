@@ -1,6 +1,6 @@
 <?php
 /**
- * Solid Security IP tools library.
+ * Kadence Security IP tools library.
  *
  * Contains the ITSEC_Lib_IP_Tools class.
  *
@@ -8,7 +8,7 @@
  */
 
 /**
- * Solid Security IP Tools Library class.
+ * Kadence Security IP Tools Library class.
  *
  * Utility class for validating and comparing IPs, as well as converting ranges. Supports IPv4 and IPv6.
  *

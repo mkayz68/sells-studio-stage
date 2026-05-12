@@ -1,6 +1,6 @@
 <?php
 /**
- * Solid Security file library.
+ * Kadence Security file library.
  *
  * Contains the ITSEC_Lib_File class.
  *
@@ -8,7 +8,7 @@
  */
 
 /**
- * Solid Security File Library class.
+ * Kadence Security File Library class.
  *
  * Utility class for managing files.
  *
@@ -122,7 +122,7 @@ class ITSEC_Lib_File {
 		}
 
 		if ( empty( $callable ) ) {
-			return new WP_Error( 'itsec-lib-file-write-no-callable-functions', sprintf( __( '%s could not be written. Both the fopen/fwrite/flock and file_put_contents functions are disabled on the server. This is a server configuration issue that must be resolved before Solid Security can write files.', 'better-wp-security' ), $file ) );
+			return new WP_Error( 'itsec-lib-file-write-no-callable-functions', sprintf( __( '%s could not be written. Both the fopen/fwrite/flock and file_put_contents functions are disabled on the server. This is a server configuration issue that must be resolved before Kadence Security can write files.', 'better-wp-security' ), $file ) );
 		}
 
 
@@ -215,7 +215,7 @@ class ITSEC_Lib_File {
 				}
 
 				/**
-				 * Fires when Solid Security writes to a managed file.
+				 * Fires when Kadence Security writes to a managed file.
 				 *
 				 * @param string $file     The path to the file.
 				 * @param string $contents The contents written.
@@ -272,7 +272,7 @@ class ITSEC_Lib_File {
 		if ( $result ) {
 
 			/**
-			 * Fires when Solid Security removes a managed file.
+			 * Fires when Kadence Security removes a managed file.
 			 *
 			 * @param string $file
 			 */

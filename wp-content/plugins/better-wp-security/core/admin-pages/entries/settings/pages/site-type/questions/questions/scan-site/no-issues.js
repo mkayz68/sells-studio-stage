@@ -5,7 +5,7 @@ import { Flex } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button, Heading, Text, TextSize, TextVariant, TextWeight } from '@ithemes/ui';
 
@@ -31,8 +31,8 @@ export default function NoIssues( { onAnswer } ) {
 						<Text
 							text={
 								installType === 'free'
-									? __( 'Pro Tip: Solid Security can scan your site twice a day to ensure it stays free of any vulnerabilities, just enable the feature below.', 'better-wp-security' )
-									: __( 'Pro Tip: Solid Security will scan your site twice a day to ensure it stays free of any vulnerabilities.', 'better-wp-security' )
+									? __( 'Pro Tip: Kadence Security can scan your site twice a day to ensure it stays free of any vulnerabilities, just enable the feature below.', 'better-wp-security' )
+									: __( 'Pro Tip: Kadence Security will scan your site twice a day to ensure it stays free of any vulnerabilities.', 'better-wp-security' )
 							}
 							variant={ TextVariant.MUTED }
 							weight={ TextWeight.HEAVY }
@@ -45,7 +45,7 @@ export default function NoIssues( { onAnswer } ) {
 			</StyledResultsCard>
 
 			<Flex direction="column" gap={ 3 }>
-				<Heading level={ 4 } text={ __( 'Build on your success by setting up Solid Security now', 'better-wp-security' ) } size={ TextSize.EXTRA_LARGE } weight={ TextWeight.NORMAL } />
+				<Heading level={ 4 } text={ __( 'Build on your success by setting up Kadence Security now', 'better-wp-security' ) } size={ TextSize.EXTRA_LARGE } weight={ TextWeight.NORMAL } />
 				<Text
 					text={ __( 'Great job on keeping all your plugins & themes up to date. Let’s help you take the next step.', 'better-wp-security' ) }
 					variant={ TextVariant.MUTED }

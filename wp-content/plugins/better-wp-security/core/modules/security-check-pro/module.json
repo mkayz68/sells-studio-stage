@@ -6,7 +6,7 @@
   },
   "type": "utility",
   "title": "Security Check Pro",
-  "description": "Detects the correct way to identify user IP addresses based on your server configuration by making an API request to SolidWP.com servers. No user information is sent to SolidWP. [Read our Privacy Policy](https://go.solidwp.com/solid-privacy-policy).",
+  "description": "Detects the correct way to identify user IP addresses based on your server configuration by making an API request to Kadence servers. No user information is sent to Kadence. [Read our Privacy Policy](https://go.solidwp.com/solid-privacy-policy).",
   "onboard": true,
   "side-effects": true,
   "tools": {

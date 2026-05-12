@@ -4,7 +4,7 @@
 import { __, sprintf } from '@wordpress/i18n';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { ListItem, Text, TextVariant } from '@ithemes/ui';
 

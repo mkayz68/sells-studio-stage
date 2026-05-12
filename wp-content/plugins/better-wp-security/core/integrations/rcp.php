@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Overrides the RCP IP address to use Solid Security.
+ * Overrides the RCP IP address to use Kadence Security.
  *
  * @return string
  */

@@ -84,7 +84,7 @@ class ITSEC_SSL {
 			$redirect = set_url_scheme( wp_validate_redirect( home_url( $_SERVER['REQUEST_URI'] ), home_url() ), 'https' );
 		}
 		
-		wp_safe_redirect( $redirect, 301, 'Solid Security' );
+		wp_safe_redirect( $redirect, 301, 'Kadence Security' );
 		exit();
 	}
 

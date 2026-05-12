@@ -35,7 +35,7 @@ export default function Panel( { notices, loaded } ) {
 						as="p"
 						size={ TextSize.SMALL }
 						variant={ TextVariant.MUTED }
-						text={ __( 'Important notices from Solid Security', 'better-wp-security' ) }
+						text={ __( 'Important notices from Kadence Security', 'better-wp-security' ) }
 					/>
 				</StyledHeaderText>
 

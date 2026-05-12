@@ -49,7 +49,7 @@ final class Non_Profit implements Templating_Site_Type {
 	public function make_prompt( string $question_id ): string {
 		switch ( $question_id ) {
 			case Question::SCAN_SITE:
-				return __( 'Before we configure Solid Security, let’s scan your non-profit website for vulnerabilities…', 'better-wp-security' );
+				return __( 'Before we configure Kadence Security, let’s scan your non-profit website for vulnerabilities…', 'better-wp-security' );
 			case Question::SELECT_END_USERS:
 				return __( 'Select your donors', 'better-wp-security' );
 			case Question::END_USERS_TWO_FACTOR:

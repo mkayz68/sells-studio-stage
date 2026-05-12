@@ -98,7 +98,7 @@ final class ITSEC_Modules implements Import_Export_Source {
 		$slug = sanitize_title_with_dashes( $slug );
 
 		if ( ! is_dir( $path ) ) {
-			trigger_error( sprintf( __( 'An attempt to register the %1$s module failed since the supplied path (%2$s) is invalid. This could indicate an invalid modification or incomplete installation of the Solid Security plugin. Please reinstall the plugin and try again.', 'better-wp-security' ), $slug, $path ) );
+			trigger_error( sprintf( __( 'An attempt to register the %1$s module failed since the supplied path (%2$s) is invalid. This could indicate an invalid modification or incomplete installation of the Kadence Security plugin. Please reinstall the plugin and try again.', 'better-wp-security' ), $slug, $path ) );
 
 			return false;
 		}

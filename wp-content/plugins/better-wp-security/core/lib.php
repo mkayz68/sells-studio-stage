@@ -2532,7 +2532,7 @@ final class ITSEC_Lib {
 						if ( $add_messages ) {
 							$error->add(
 								'version',
-								sprintf( __( 'You must be running at least version %s of Solid Security.', 'better-wp-security' ), $version )
+								sprintf( __( 'You must be running at least version %s of Kadence Security.', 'better-wp-security' ), $version )
 							);
 						} else {
 							$error->add( 'version', '' );
@@ -2627,13 +2627,13 @@ final class ITSEC_Lib {
 				case 'load':
 					if ( $requirement === 'normal' && ITSEC_Core::is_loading_early() ) {
 						if ( $add_messages ) {
-							$error->add( 'load', __( 'Loading Solid Security via an MU-Plugin is not supported.', 'better-wp-security' ) );
+							$error->add( 'load', __( 'Loading Kadence Security via an MU-Plugin is not supported.', 'better-wp-security' ) );
 						} else {
 							$error->add( 'load', '' );
 						}
 					} elseif ( $requirement === 'early' && ! ITSEC_Core::is_loading_early() ) {
 						if ( $add_messages ) {
-							$error->add( 'load', __( 'Loading Solid Security without an MU-Plugin is not supported.', 'better-wp-security' ) );
+							$error->add( 'load', __( 'Loading Kadence Security without an MU-Plugin is not supported.', 'better-wp-security' ) );
 						} else {
 							$error->add( 'load', '' );
 						}

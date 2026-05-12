@@ -126,7 +126,7 @@ if ( version_compare( PHP_VERSION, ITSEC_Core::get_next_php_requirement(), '<' )
 
 			public function get_title() {
 				return sprintf(
-					__( 'Your site is running an outdated version of PHP (%1$s). Future versions of Solid Security will require PHP %2$s or later.', 'better-wp-security' ),
+					__( 'Your site is running an outdated version of PHP (%1$s). Future versions of Kadence Security will require PHP %2$s or later.', 'better-wp-security' ),
 					explode( '-', PHP_VERSION )[0],
 					ITSEC_Core::get_next_php_requirement()
 				);
@@ -252,7 +252,7 @@ ITSEC_Lib_Admin_Notices::register(
 				}
 
 				public function get_title() {
-					return __( 'Solid Security can encrypt sensitive values like Two-Factor secrets.', 'better-wp-security' );
+					return __( 'Kadence Security can encrypt sensitive values like Two-Factor secrets.', 'better-wp-security' );
 				}
 
 				public function get_message() {

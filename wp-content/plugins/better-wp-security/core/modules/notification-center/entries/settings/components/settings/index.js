@@ -27,7 +27,7 @@ export default function Settings( {
 				<PageHeader
 					title={ __( 'Notifications', 'better-wp-security' ) }
 					description={ __(
-						'Manage and configure email notifications sent by Solid Security related to various features.',
+						'Manage and configure email notifications sent by Kadence Security related to various features.',
 						'better-wp-security'
 					) }
 					hasBorder

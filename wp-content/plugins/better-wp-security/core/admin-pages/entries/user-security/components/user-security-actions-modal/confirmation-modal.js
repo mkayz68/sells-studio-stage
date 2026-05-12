@@ -9,7 +9,7 @@ import {
 import { useDispatch, useSelect } from '@wordpress/data';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import {
 	Button,

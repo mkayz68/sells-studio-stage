@@ -9,7 +9,7 @@ import styled from '@emotion/styled';
 import { Button } from '@wordpress/components';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Heading, Text } from '@ithemes/ui';
 
@@ -63,10 +63,10 @@ export const StyledBannerButton = styled.a`
 	font-size: 0.83569rem;
 	text-align: center;
 	text-decoration: none;
-	background: #6817C5;
+	background: #1145C9;
 
 	&:hover, &:active, &:focus {
-		background-color: #53129e;
+		background-color: #0e38a3;
 		color: ${ ( { theme } ) => theme.colors.text.white };
 	}
 `;
@@ -76,7 +76,7 @@ export const StyledStellarSaleDismiss = styled( Button )`
 	top: 0;
 	right: 0;
 	&:hover, &:active, &:focus {
-		color: #6817c5;
+		color: #1145c9;
 	}
 `;
 
@@ -87,7 +87,7 @@ export const StyledBFCMBanner = styled.aside`
 	overflow: hidden;
 	margin: 1.25rem 1.25rem 0;
 	padding: 0 2.5rem 0 2.5rem;
-	background: linear-gradient(90deg, #00010C 0%, #8533FF 100%);
+	background: linear-gradient(90deg, #00010C 0%, #3370FF 100%);
 	@media screen and (min-width: ${ ( { theme } ) => theme.breaks.small }px) {
 		flex-direction: row;
 		justify-content: space-between;
@@ -127,7 +127,7 @@ export const StyledBFCMButton = styled( Button )`
 	font-size: 1rem;
 	border-radius: 50px;
 	background: #F9FAF9;
-	color: #8533FF;
+	color: #3370FF;
 `;
 
 export const StyledLogo = styled( SolidLogoCropped )`
@@ -149,7 +149,7 @@ export const StyledBFCMDismiss = styled( Button )`
 	top: 2px;
 	right: 2px;
 	&:hover, &:active, &:focus {
-		color: #6817c5;
+		color: #1145c9;
 	}
 	
 	& svg {

@@ -18,7 +18,7 @@ import { Flex } from '@wordpress/components';
 import { createInterpolateElement, useEffect } from '@wordpress/element';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Badge, TextSize, TextVariant, Text } from '@ithemes/ui';
 
@@ -165,8 +165,8 @@ function CustomerPatchstackStatusBanner( { hasPatchstack, isSmall, numberOfVulne
 		subText = sprintf(
 			/* translators: 1. Number of vulnerabilities. */
 			_n(
-				'Solid Security Pro could have instantly protected you from %d vulnerability in the last 90 days using automated firewall protection from Patchstack.',
-				'Solid Security Pro could have instantly protected you from %d vulnerabilities in the last 90 days using automated firewall protection from Patchstack.',
+				'Kadence Security Pro could have instantly protected you from %d vulnerability in the last 90 days using automated firewall protection from Patchstack.',
+				'Kadence Security Pro could have instantly protected you from %d vulnerabilities in the last 90 days using automated firewall protection from Patchstack.',
 				numberOfVulnerabilities,
 				'better-wp-security'
 			),
@@ -217,7 +217,7 @@ function CustomerPatchstackStatusBanner( { hasPatchstack, isSmall, numberOfVulne
 				{ ! hasPatchstack && (
 					<StyledButton
 						text={ installType === 'free'
-							? __( 'Get Solid Security Pro + Patchstack', 'better-wp-security' )
+							? __( 'Get Kadence Security Pro + Patchstack', 'better-wp-security' )
 							: __( 'Upgrade to Patchstack', 'better-wp-security' )
 						}
 						variant="primary"
@@ -257,8 +257,8 @@ function AutomatedVulnerabilityTableHeader( { hasPatchstack, isLarge, numberOfVu
 			sprintf(
 				/* translators: 1.Number of vulnerabilities. */
 				_n(
-					'Solid Security Pro with Patchstack automatically protected you from <b>%d</b> vulnerability in the last 90 days',
-					'Solid Security Pro with Patchstack automatically protected you from <b>%d</b> vulnerabilities in the last 90 days',
+					'Kadence Security Pro with Patchstack automatically protected you from <b>%d</b> vulnerability in the last 90 days',
+					'Kadence Security Pro with Patchstack automatically protected you from <b>%d</b> vulnerabilities in the last 90 days',
 					numberOfVulnerabilities,
 					'better-wp-security'
 				), numberOfVulnerabilities
@@ -353,7 +353,7 @@ function AutomatedVulnerabilityTable( { items, isSmall, installType, hasPatchsta
 					<ProPlusPatchstack />
 					<Text
 						text={ createInterpolateElement(
-							__( 'We didn’t spot vulnerabilities that could have been patched automatically in the last 90 days, <b>but they can still appear any day</b>. Solid Security Pro with Patchstack gives peace of mind and proactive security upgrade to be automatically protected today!', 'better-wp-security' ),
+							__( 'We didn’t spot vulnerabilities that could have been patched automatically in the last 90 days, <b>but they can still appear any day</b>. Kadence Security Pro with Patchstack gives peace of mind and proactive security upgrade to be automatically protected today!', 'better-wp-security' ),
 							{ b: <strong /> }
 						) }
 						align="center"
@@ -392,8 +392,8 @@ function InstantProtectionCard( { hasPatchstack, numberOfVulnerabilities } ) {
 		cardText = createInterpolateElement(
 			sprintf(
 				/* translators: 1. Number of vulnerabilities. */
-				_n( 'You were automatically protected from <b>%d vulnerability</b> using <b>virtual patching,</b> Solid Security Pro’s instant protection feature!',
-					'You were automatically protected from <b>%d vulnerabilities</b> using <b>virtual patching,</b> Solid Security Pro’s instant protection feature!',
+				_n( 'You were automatically protected from <b>%d vulnerability</b> using <b>virtual patching,</b> Kadence Security Pro’s instant protection feature!',
+					'You were automatically protected from <b>%d vulnerabilities</b> using <b>virtual patching,</b> Kadence Security Pro’s instant protection feature!',
 					numberOfVulnerabilities,
 					'better-wp-security'
 				),
@@ -403,8 +403,8 @@ function InstantProtectionCard( { hasPatchstack, numberOfVulnerabilities } ) {
 		cardText = createInterpolateElement(
 			sprintf(
 				/* translators: 1. Number of vulnerabilities. */
-				_n( 'Automated protection was available for <b>%d vulnerabilities</b> using <b>virtual patches</b> that instantly deploy when using Solid Security Pro with Patchstack integration. Get ’round the clock protection. Go Pro today.',
-					'Automated protection was available for <b>%d vulnerabilities</b> using <b>virtual patches</b> that instantly deploy when using Solid Security Pro with Patchstack integration. Get ’round the clock protection. Go Pro today.',
+				_n( 'Automated protection was available for <b>%d vulnerabilities</b> using <b>virtual patches</b> that instantly deploy when using Kadence Security Pro with Patchstack integration. Get ’round the clock protection. Go Pro today.',
+					'Automated protection was available for <b>%d vulnerabilities</b> using <b>virtual patches</b> that instantly deploy when using Kadence Security Pro with Patchstack integration. Get ’round the clock protection. Go Pro today.',
 					numberOfVulnerabilities,
 					'better-wp-security',
 				),
@@ -452,8 +452,8 @@ function RealTimeUpdatesCard( { installType } ) {
 			sprintf(
 				/* translators: 1. Number of vulnerabilities. */
 				_n(
-					'Solid Security with the help of Patchstack has <b>automatically updated %d plugin or theme</b> in the last 90 days!',
-					'Solid Security with the help of Patchstack has <b>automatically updated %d plugins or themes</b> in the last 90 days!',
+					'Kadence Security with the help of Patchstack has <b>automatically updated %d plugin or theme</b> in the last 90 days!',
+					'Kadence Security with the help of Patchstack has <b>automatically updated %d plugins or themes</b> in the last 90 days!',
 					items.length,
 					'better-wp-security'
 				),

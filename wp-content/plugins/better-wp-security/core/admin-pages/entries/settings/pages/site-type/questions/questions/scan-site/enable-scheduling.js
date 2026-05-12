@@ -6,7 +6,7 @@ import { ToggleControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Badge } from '@ithemes/ui';
 import { MODULES_STORE_NAME } from '@ithemes/security.packages.data';

@@ -431,7 +431,7 @@ final class ITSEC_Logs_Page {
 ?>
 	<div class="wrap">
 		<h1>
-			<?php _e( 'Solid Security', 'better-wp-security' ); ?>
+			<?php _e( 'Kadence Security', 'better-wp-security' ); ?>
 			<a href="<?php echo esc_url( ITSEC_Core::get_settings_page_url() ); ?>" class="page-title-action"><?php _e( 'Manage Settings', 'better-wp-security' ); ?></a>
 			<a href="<?php echo esc_url( apply_filters( 'itsec_support_url', 'https://go.solidwp.com/org-support-link' ) ); ?>" class="page-title-action"><?php _e( 'Support', 'better-wp-security' ); ?></a>
 		</h1>

@@ -8,7 +8,7 @@ import { useSelect } from '@wordpress/data';
 import { Icon } from '@wordpress/icons';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import {
 	Button,
@@ -102,7 +102,7 @@ function GetPro( { isSmall } ) {
 		<StyledGetProText>
 			{ /* Text UI component is not clickable inside draggableHandle */ }
 			{ ! isSmall && <span>{ __( 'Get Improved Vulnerability Scanning', 'better-wp-security' ) }</span> }
-			{ ! isSmall && <span>{ __( 'Upgrade to Solid Security Pro.', 'better-wp-security' ) }</span> }
+			{ ! isSmall && <span>{ __( 'Upgrade to Kadence Security Pro.', 'better-wp-security' ) }</span> }
 			{ isSmall && <span>{ __( 'Improve Scanning', 'better-wp-security' ) }</span> }
 		</StyledGetProText>
 		<ExternalLink />

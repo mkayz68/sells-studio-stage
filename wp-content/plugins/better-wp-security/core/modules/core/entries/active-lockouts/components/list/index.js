@@ -1,5 +1,5 @@
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { MasterDetail } from '@ithemes/ui';
 

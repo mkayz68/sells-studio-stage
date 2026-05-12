@@ -451,7 +451,8 @@ class Two_Factor_Totp extends Two_Factor_Provider implements ITSEC_Two_Factor_Pr
 	}
 
 	/**
-	 * Uses the Google Charts API to build a QR Code for use with an otpauth url
+	 * Builds a QR Code for use with an otpauth url. It uses a local library as default (GD extension is required),
+	 * but falls back to remote generation with qr-code.ithemes.com service if local fails.
 	 *
 	 * @param string $name  The name to display in the Authentication app.
 	 * @param string $key   The secret key to share with the Authentication app.
@@ -467,9 +468,12 @@ class Two_Factor_Totp extends Two_Factor_Provider implements ITSEC_Two_Factor_Pr
 			$payload .= urlencode( '&issuer=' . rawurlencode( $title ) );
 		}
 
-		$size = isset( $opts['size'] ) ? absint( $opts['size'] ) : 200;
+		$url = $this->generate_local_qr_code( $payload );
 
-		$url = "https://qr-code.ithemes.com/?size={$size}&data={$payload}";
+		if ( $url === '' ) {
+			$size = isset( $opts['size'] ) ? absint( $opts['size'] ) : 200;
+			$url  = "https://qr-code.ithemes.com/?size={$size}&data={$payload}";
+		}
 
 		/**
 		 * Filter the image URL for the QR code.
@@ -483,6 +487,46 @@ class Two_Factor_Totp extends Two_Factor_Provider implements ITSEC_Two_Factor_Pr
 		$url = apply_filters( 'itsec_two_factor_qr_code_url', $url, $payload, $name, $key, $title, $opts );
 
 		return $url;
+	}
+
+	/**
+	 * Generate a QR code locally using the bundled ITSEC_QRCode library and PHP's GD extension.
+	 *
+	 * @param string $payload The url-encoded otpauth payload.
+	 *
+	 * @return string A `data:image/png;base64,...` URI on success, or an empty string when GD is
+	 *                unavailable or generation fails.
+	 */
+	private function generate_local_qr_code( $payload ): string {
+		if ( ! function_exists( 'imagepng' ) ) {
+			return '';
+		}
+
+		require_once dirname( __DIR__ ) . '/includes/qr-code.php';
+
+		$data     = '';
+		$ob_level = ob_get_level();
+
+		try {
+			$qr    = \iThemesSecurity\TwoFactor\ITSEC_QRCode::getMinimumQRCode( urldecode( $payload ), ITSEC_QR_ERROR_CORRECT_LEVEL_L );
+			$image = $qr->createImage( 4, 0 );
+			if ( $image ) {
+				ob_start();
+				imagepng( $image );
+				$data = (string) ob_get_clean();
+			}
+		} catch ( \Throwable $e ) {
+		}
+
+		while ( ob_get_level() > $ob_level ) {
+			ob_end_clean();
+		}
+
+		if ( $data === '' ) {
+			return '';
+		}
+
+		return sprintf( 'data:image/png;base64,%s', base64_encode( $data ) );
 	}
 
 	/**

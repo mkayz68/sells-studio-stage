@@ -11,7 +11,7 @@ import { Icon, Spinner } from '@wordpress/components';
 import { check, close, lock, caution as warning } from '@wordpress/icons';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button, Text } from '@ithemes/ui';
 
@@ -73,7 +73,7 @@ export function progressBarColor( status, index, length, side, installType = 'pr
 		case 'upgrade':
 			return '#333333';
 		default:
-			return '#6817C5';
+			return '#1145C9';
 	}
 }
 
@@ -200,7 +200,7 @@ const StyledUpgradeIcon = styled( StyledStatusIcon ) `
 `;
 
 const StyledWarningIcon = styled( StyledStatusIcon ) `
-	background: #FFC518;
+	background: #E86230;
 `;
 
 const StyledSuccessIcon = styled( StyledStatusIcon ) `
@@ -208,7 +208,7 @@ const StyledSuccessIcon = styled( StyledStatusIcon ) `
 `;
 
 const StyledErrorIcon = styled( StyledStatusIcon )`
-	background: #D63638;
+	background: #D12502;
 `;
 
 export const StyledTextContainer = styled.div`

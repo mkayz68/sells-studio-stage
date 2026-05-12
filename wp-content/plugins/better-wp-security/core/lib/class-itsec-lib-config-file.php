@@ -1,6 +1,6 @@
 <?php
 /**
- * Solid Security config file library.
+ * Kadence Security config file library.
  *
  * Contains the ITSEC_Lib_Config_File class.
  *
@@ -8,9 +8,9 @@
  */
 
 /**
- * Solid Security Config File Library class.
+ * Kadence Security Config File Library class.
  *
- * Utility class for adding, updating, and removing Solid Security modifications from existing config files.
+ * Utility class for adding, updating, and removing Kadence Security modifications from existing config files.
  *
  * @package iThemes_Security
  * @since 1.15.0
@@ -62,7 +62,7 @@ class ITSEC_Lib_Config_File {
 		}
 
 		$comment_delimiter = self::get_comment_delimiter( $server );
-		$modification = "$comment_delimiter " . __( 'Solid Security preserved the following settings as removing them could prevent the site from functioning correctly.', 'better-wp-security' ) . "\n$modification";
+		$modification = "$comment_delimiter " . __( 'Kadence Security preserved the following settings as removing them could prevent the site from functioning correctly.', 'better-wp-security' ) . "\n$modification";
 
 		return self::get_prepared_modification( $modification, $comment_delimiter );
 	}
@@ -96,7 +96,7 @@ class ITSEC_Lib_Config_File {
 	}
 
 	/**
-	 * Add a modification to the server config file without having to rebuild all Solid Security modifications.
+	 * Add a modification to the server config file without having to rebuild all Kadence Security modifications.
 	 *
 	 * By default, this modification is wrapped in comments that allow for removal of the modification when future
 	 * updates occur. Thus, this function should only be used if a future update will include the same changes. If the
@@ -105,7 +105,7 @@ class ITSEC_Lib_Config_File {
 	 * @since 1.15.0
 	 *
 	 * @param string $modification The modification to add to the server config file.
-	 * @param bool   $permanent    Optional. Set to true to prevent Solid Security from removing the change in the
+	 * @param bool   $permanent    Optional. Set to true to prevent Kadence Security from removing the change in the
 	 *                             future. Defaults to false.
 	 * @return bool|WP_Error Boolean true on success or a WP_Error object otherwise.
 	 */
@@ -176,7 +176,7 @@ class ITSEC_Lib_Config_File {
 		}
 
 		$comment_delimiter = self::get_comment_delimiter( 'wp-config' );
-		$modification = "$comment_delimiter " . __( 'Solid Security preserved the following settings as removing them could prevent the site from functioning correctly.', 'better-wp-security' ) . "\n$modification";
+		$modification = "$comment_delimiter " . __( 'Kadence Security preserved the following settings as removing them could prevent the site from functioning correctly.', 'better-wp-security' ) . "\n$modification";
 
 		return self::get_prepared_modification( $modification, $comment_delimiter );
 	}
@@ -214,18 +214,18 @@ class ITSEC_Lib_Config_File {
 	}
 
 	/**
-	 * Add a modification to the wp-config.php file without having to rebuild all Solid Security modifications.
+	 * Add a modification to the wp-config.php file without having to rebuild all Kadence Security modifications.
 	 *
 	 * By default, this modification is wrapped in comments that allow for removal of the modification when future
 	 * updates occur. Thus, this function should only be used if a future update will include the same changes. If the
 	 * optional $permanent attribute is set to true, the comment wrapper will not be added to the modification. This
-	 * results in Solid Security being unable to manage the modification in the future and should only be used for
+	 * results in Kadence Security being unable to manage the modification in the future and should only be used for
 	 * changes that are one-time in nature and should not be undone, such as changing the Content Directory.
 	 *
 	 * @since 1.15.0
 	 *
 	 * @param string $modification The modification to add to the wp-config.php file.
-	 * @param bool   $permanent    Optional. Set to true to prevent Solid Security from removing the change in the
+	 * @param bool   $permanent    Optional. Set to true to prevent Kadence Security from removing the change in the
 	 *                             future. Defaults to false.
 	 * @return bool|WP_Error Boolean true on success or a WP_Error object otherwise.
 	 */
@@ -302,7 +302,7 @@ class ITSEC_Lib_Config_File {
 	}
 
 	/**
-	 * Returns the contents of the file with the Solid Security modifications removed.
+	 * Returns the contents of the file with the Kadence Security modifications removed.
 	 *
 	 * @since 1.15.0
 	 * @access protected
@@ -328,7 +328,7 @@ class ITSEC_Lib_Config_File {
 		$format_version = 0;
 
 		// Attempt to retrieve config file details from the contents.
-		if ( preg_match( '/(?:Solid|iThemes)\s+Security\s+Config\s+Details:\s+([^\s]+)/', $contents, $match ) ) {
+		if ( preg_match( '/(?:Kadence|Solid|iThemes)\s+Security\s+Config\s+Details:\s+([^\s]+)/', $contents, $match ) ) {
 			$details = explode( ':', $match[1] );
 
 			if ( isset( $details[0] ) && ( (string) intval( $details[0] ) === $details[0] ) ) {
@@ -345,12 +345,16 @@ class ITSEC_Lib_Config_File {
 		}
 
 
-		// Create a set of regex patterns to identify existing Solid Security and legacy iThemes Security modifications.
+		// Create a set of regex patterns to identify existing Kadence Security, Solid Security, and legacy iThemes Security modifications.
 		$comment_delimiter = self::get_comment_delimiter( $type );
 		$quoted_comment_delimiter = preg_quote( $comment_delimiter, '/' );
 		$line_ending = self::get_line_ending( $contents );
 
 		$patterns = array(
+			array(
+				'begin' => "$quoted_comment_delimiter+\s*BEGIN\s+Kadence\s+Security",
+				'end'   => "$quoted_comment_delimiter+\s*END\s+Kadence\s+Security",
+			),
 			array(
 				'begin' => "$quoted_comment_delimiter+\s*BEGIN\s+Solid\s+Security",
 				'end'   => "$quoted_comment_delimiter+\s*END\s+Solid\s+Security",
@@ -438,7 +442,7 @@ class ITSEC_Lib_Config_File {
 	 * @param string $type                         The type of config file. Valid options are apache, nginx, and
 	 *                                             wp-config.
 	 * @param string $modification                 The contents to add or update the file with. If an empty string is
-	 *                                             supplied, all Solid Security modifications will be removed.
+	 *                                             supplied, all Kadence Security modifications will be removed.
 	 * @param bool   $clear_existing_modifications Optional. Whether or not existing modifications should be removed
 	 *                                             first. Defaults to true.
 	 * @return bool|WP_Error Boolean true on success or a WP_Error object otherwise.
@@ -519,7 +523,7 @@ class ITSEC_Lib_Config_File {
 		}
 
 
-		// Pad away from existing sections when adding Solid Security modifications.
+		// Pad away from existing sections when adding Kadence Security modifications.
 		$line_ending = self::get_line_ending( $contents );
 
 		while ( ! preg_match( "/(?:^|(?:(?<!\r)\n|\r(?!\n)|(?<!\r)\r\n|\r\r\n)(?:(?<!\r)\n|\r(?!\n)|(?<!\r)\r\n|\r\r\n))$placeholder/", $contents ) ) {
@@ -546,7 +550,7 @@ class ITSEC_Lib_Config_File {
 	}
 
 	/**
-	 * Add the identifying comments to the modification to identify them as coming from Solid Security.
+	 * Add the identifying comments to the modification to identify them as coming from Kadence Security.
 	 *
 	 * @since 1.15.0
 	 * @access protected
@@ -554,7 +558,7 @@ class ITSEC_Lib_Config_File {
 	 * @param string $file         Config file to update.
 	 * @param string $type         The type of config file. Valid options are apache, nginx, and wp-config.
 	 * @param string $modification The contents to add or update the file with. If an empty string is supplied, all
-	 *                             Solid Security modifications will be removed.
+	 *                             Kadence Security modifications will be removed.
 	 * @return bool|WP_Error Boolean true on success or a WP_Error object otherwise.
 	 */
 	protected static function get_prepared_modification( $modification, $comment_delimiter ) {
@@ -569,12 +573,12 @@ class ITSEC_Lib_Config_File {
 
 
 		// Update the modification to have the beginning and ending comments in order to identify the section as being
-		// added by Solid Security.
+		// added by Kadence Security.
 		$supplied_modification = $modification;
-		$modification  = "$comment_delimiter BEGIN Solid Security - " . __( 'Do not modify or remove this line', 'better-wp-security' ) . "\n";
-		$modification .= "$comment_delimiter Solid Security Config Details: " . self::FORMAT_VERSION . "\n";
+		$modification  = "$comment_delimiter BEGIN Kadence Security - " . __( 'Do not modify or remove this line', 'better-wp-security' ) . "\n";
+		$modification .= "$comment_delimiter Kadence Security Config Details: " . self::FORMAT_VERSION . "\n";
 		$modification .= "$supplied_modification\n";
-		$modification .= "$comment_delimiter END Solid Security - " . __( 'Do not modify or remove this line', 'better-wp-security' );
+		$modification .= "$comment_delimiter END Kadence Security - " . __( 'Do not modify or remove this line', 'better-wp-security' );
 
 		return $modification;
 	}

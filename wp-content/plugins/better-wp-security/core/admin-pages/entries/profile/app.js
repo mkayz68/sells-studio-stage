@@ -7,7 +7,7 @@ import { createSlotFill, SlotFillProvider } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';
 import { useCallback } from '@wordpress/element';
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Heading, ShadowPortal, Root, solidTheme } from '@ithemes/ui';
 

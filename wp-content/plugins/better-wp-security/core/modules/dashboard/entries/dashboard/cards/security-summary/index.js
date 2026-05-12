@@ -90,7 +90,7 @@ export default function SecuritySummary( { card, config, eqProps } ) {
 							size={ TextSize.LARGE }
 							variant={ TextVariant.DARK }
 							weight={ 600 }
-							text={ __( 'Latest in Solid Security News', 'better-wp-security' ) }
+							text={ __( 'Latest in Kadence Security News', 'better-wp-security' ) }
 						/>
 					</StyledSectionTitle>
 					<StyledBlogLink href={ card.data.news.link } target="_blank" rel="noreferrer">

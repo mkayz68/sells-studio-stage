@@ -4,7 +4,7 @@
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { RiveGraphicProvider } from '@ithemes/security-ui';
 

@@ -1,5 +1,5 @@
 body.toplevel_page_itsec-dashboard {
-    background: $solid-wp-surface-underPage;
+    background: $kadence-surface-underPage;
 
     #wpcontent {
         padding-left: 0;
@@ -11,11 +11,11 @@ body.toplevel_page_itsec-dashboard {
 }
 
 .itsec-dashboard, .itsec-apply-css-vars {
-    --wp-components-color-accent: #{$solid-wp-primary-base};
-    --wp-components-color-foreground: #{$solid-wp-text-color-dark};
-    --wp-admin-theme-color: #{$solid-wp-primary-base};
-    --wp-admin-theme-color-darker-10: #{$solid-wp-primary-darker10};
-    --wp-admin-theme-color-darker-20: #{$solid-wp-primary-darker20};
+    --wp-components-color-accent: #{$kadence-primary-base};
+    --wp-components-color-foreground: #{$kadence-text-color-dark};
+    --wp-admin-theme-color: #{$kadence-primary-base};
+    --wp-admin-theme-color-darker-10: #{$kadence-primary-darker10};
+    --wp-admin-theme-color-darker-20: #{$kadence-primary-darker20};
 }
 
 .itsec-dashboard .components-notice-list {

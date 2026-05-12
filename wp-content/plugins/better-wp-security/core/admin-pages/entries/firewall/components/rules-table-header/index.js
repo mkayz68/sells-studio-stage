@@ -120,7 +120,7 @@ export default function RulesTableHeader() {
 							] } />
 							<FiltersGroupCheckboxes slug="provider" title={ __( 'Source', 'better-wp-security' ) } options={ [
 								{ value: 'patchstack', label: __( 'Patchstack', 'better-wp-security' ) },
-								{ value: 'solid', label: __( 'Solid Security', 'better-wp-security' ) },
+								{ value: 'solid', label: __( 'Kadence Security', 'better-wp-security' ) },
 								{ value: 'user', label: __( 'Custom Rules', 'better-wp-security' ) },
 							] } />
 						</StyledFilters>

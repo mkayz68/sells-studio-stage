@@ -15,7 +15,7 @@
     "exclude_group": {
       "type": "multiple",
       "title": "Skip Two-Factor Onboarding",
-      "description": "By default, when a user logs in via the WordPress Login Page, Solid Security will prompt them to setup Two-Factor. Optionally, you can skip the two-factor authentication on-boarding process for certain users. Users can still manually enroll in two-factor through their WordPress admin profile."
+      "description": "By default, when a user logs in via the WordPress Login Page, Kadence Security will prompt them to setup Two-Factor. Optionally, you can skip the two-factor authentication on-boarding process for certain users. Users can still manually enroll in two-factor through their WordPress admin profile."
     },
     "application_passwords_group": {
       "type": "multiple",
@@ -51,7 +51,7 @@
         ],
         "default": "all",
         "title": "Authentication Methods Available to Users",
-        "description": "Solid Security supports multiple two-factor authentication methods: mobile apps, email messages, and backup codes. Selecting “All Methods” is highly recommended so that users can choose the method that works the best for them."
+        "description": "Kadence Security supports multiple two-factor authentication methods: mobile apps, email messages, and backup codes. Selecting “All Methods” is highly recommended so that users can choose the method that works the best for them."
       },
       "custom_available_methods": {
         "type": "array",

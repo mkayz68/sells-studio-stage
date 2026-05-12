@@ -51,7 +51,7 @@ export default function Pages() {
 						<ModulesOfTypePage
 							type="advanced"
 							title={ __( 'Advanced', 'better-wp-security' ) }
-							description={ __( 'Configure advanced Solid Security settings.', 'better-wp-security' ) }
+							description={ __( 'Configure advanced Kadence Security settings.', 'better-wp-security' ) }
 						/>
 					)
 				}

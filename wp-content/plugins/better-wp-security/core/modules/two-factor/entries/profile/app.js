@@ -5,7 +5,7 @@ import { __ } from '@wordpress/i18n';
 import { createInterpolateElement } from '@wordpress/element';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import {
 	Button,

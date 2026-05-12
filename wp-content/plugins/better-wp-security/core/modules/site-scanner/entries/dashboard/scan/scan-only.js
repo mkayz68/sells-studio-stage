@@ -26,7 +26,7 @@ export default function ScanOnly( { card, config } ) {
 				<p>
 					{ createInterpolateElement(
 						__(
-							'This <a>site scan is powered by SolidWP</a>. We check for Google Safe Browsing blocklist status, website errors, and out-of-date software. These data points are not 100% accurate, but we try our best to provide thorough results.',
+							'This <a>site scan is powered by Kadence</a>. We check for Google Safe Browsing blocklist status, website errors, and out-of-date software. These data points are not 100% accurate, but we try our best to provide thorough results.',
 							'better-wp-security'
 						),
 						{

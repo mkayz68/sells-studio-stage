@@ -4,11 +4,11 @@
 }
 
 .itsec-vulnerabilities, .itsec-apply-css-vars {
-	--wp-components-color-accent: #{$solid-wp-primary-base};
-	--wp-components-color-foreground: #{$solid-wp-text-color-dark};
-	--wp-admin-theme-color: #{$solid-wp-primary-base};
-	--wp-admin-theme-color-darker-10: #{$solid-wp-primary-darker10};
-	--wp-admin-theme-color-darker-20: #{$solid-wp-primary-darker20};
+	--wp-components-color-accent: #{$kadence-primary-base};
+	--wp-components-color-foreground: #{$kadence-text-color-dark};
+	--wp-admin-theme-color: #{$kadence-primary-base};
+	--wp-admin-theme-color-darker-10: #{$kadence-primary-darker10};
+	--wp-admin-theme-color-darker-20: #{$kadence-primary-darker20};
 }
 
 #wpcontent {

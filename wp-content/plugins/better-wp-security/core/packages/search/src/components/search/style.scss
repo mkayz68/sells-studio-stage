@@ -15,7 +15,7 @@
         position: absolute;
         background: $white;
         box-shadow: $popover-shadow;
-        border: 1px solid $solid-wp-border-normal;
+        border: 1px solid $kadence-border-normal;
         z-index: 1000;
     }
 
@@ -28,10 +28,10 @@
 
         & > [role="presentation"] {
             text-transform: uppercase;
-            font-size: $solid-wp-text-size-small;
+            font-size: $kadence-text-size-small;
             font-weight: 400;
-            color: $solid-wp-text-color-muted;
-            border-bottom: 1px solid $solid-wp-border-normal;
+            color: $kadence-text-color-muted;
+            border-bottom: 1px solid $kadence-border-normal;
             padding: .75rem 0.5rem;
             margin: 0 0.5rem;
             display: block;
@@ -47,9 +47,9 @@
         margin: 0.5rem 0;
 
         & > [role="presentation"] {
-            font-size: $solid-wp-text-size-small;
+            font-size: $kadence-text-size-small;
             font-weight: 600;
-            color: $solid-wp-text-color-dark;
+            color: $kadence-text-color-dark;
             text-transform: uppercase;
             padding: 0.5rem;
             margin: 0 0.5rem;
@@ -78,25 +78,25 @@
         &[aria-selected="true"],
         &:active {
             border-radius: 2px;
-            box-shadow: 0 0 0 var(--wp-admin-border-width-focus) $solid-wp-primary-darker20;
+            box-shadow: 0 0 0 var(--wp-admin-border-width-focus) $kadence-primary-darker20;
             outline: 2px solid transparent;
         }
 
         span {
-            color: $solid-wp-text-color-dark;
-            font-size: $solid-wp-text-size-small;
+            color: $kadence-text-color-dark;
+            font-size: $kadence-text-size-small;
             font-weight: 600;
         }
 
         p {
-            color: $solid-wp-text-color-muted;
+            color: $kadence-text-color-muted;
             margin: 0;
             font-weight: 400;
         }
 
         &:hover {
             span {
-                color: $solid-wp-primary-darker20;
+                color: $kadence-primary-darker20;
             }
         }
     }

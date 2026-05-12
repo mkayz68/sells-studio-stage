@@ -1,68 +1,89 @@
 Lundi 27 Avril : 
-    Mise en place de WordPress
-    Prise en main du template builder Oxygen
-    Mise en place de la page contact et mention légale
-    Préparation des autres pages
-    Ajouts d'extension (Contact Form 7, une extension personnalisé pour google maps, Solid Security)
+    - Mise en place de WordPress
+    - Prise en main du template builder Oxygen
+    - Mise en place de la page contact et mention légale
+    - Préparation des autres pages
+    - Ajouts d'extension (Contact Form 7, une extension personnalisé pour google maps, Solid Security)
 
 Mardi 28 Avril :
     09h00 - 11h
-        Placement du logo dans le header une fois fourni
-        Tentative d'installation de ma virtual machine sur Linux pour essayer de commencer Swift
-        Installation de Linux Ubuntu sur Oracle VirtualBox
+        - Placement du logo dans le header une fois fourni
+        - Tentative d'installation de ma virtual machine sur Linux pour essayer de commencer Swift
+        - Installation de Linux Ubuntu sur Oracle VirtualBox
     11h40
-        Configuration terminée et tentative d'installer Swift
-        Installation de curl
+        - Configuration terminée et tentative d'installer Swift
+        - Installation de curl
     12h05
-        Swift est installé, et a l'air fonctionnel!
+        - Swift est installé, et a l'air fonctionnel!
     13h-14h40
-        CSS personnalisé sur la page contact
-        Creation d'un design pour la page "Nos prestations"
+        - CSS personnalisé sur la page contact
+        - Creation d'un design pour la page "Nos prestations"
     16h08
-        Fin page "Nos prestations" v1.0
+        - Fin page "Nos prestations" v1.0
     17h00
-        ajouts d'icones et personnalisation contact sur la page prestation
-        modif css
+        - ajouts d'icones et personnalisation contact sur la page prestation
+        - modif css
 
 Mercredi 29 Avril
     09h00 - 11h00
-        Création de la page Formation
-        Créations de carte, visuel uniquement pour le moment. v1
+        - Création de la page Formation
+        - Créations de carte, visuel uniquement pour le moment. v1
     13h00 - 14h30
-        Fix bug médiathèque WordPress (contournement avec une extension)
-        Changement des icones
+        - Fix bug médiathèque WordPress (contournement avec une extension)
+        - Changement des icones
     15h00 - 16h30
-        Modification de la page formation
-        Création des pages de formation (single page)
-        Début de page HTML/CSS (v1)
+        - Modification de la page formation
+        - Création des pages de formation (single page)
+        - Début de page HTML/CSS (v1)
     16h30 - 17h00
-        Début page HTML/CSS
+        - Début page HTML/CSS
 
 Jeudi 30 Avril
     09h00 - 11h45
-        Création d'une page formation pour regrouper les cartes par catégories
+        - Création d'une page formation pour regrouper les cartes par catégories
     13h00 - 14h11
-        Fin de la nouvelle page catégorie de formation ainsi que chaque single de catégorie de formation.
-        Création de mon css personnalisé pour ajouter des petits effets au passage de la souris
+        - Fin de la nouvelle page catégorie de formation ainsi que chaque single de catégorie de formation.
+        - Création de mon css personnalisé pour ajouter des petits effets au passage de la souris
     14h11 - 17h00
-        Reponsive sur toutes les pages effectué
-        Début d'ideé front-end pour la page "notre équipe" et "nos prestations". géré en responsive aussi.
+        - Reponsive sur toutes les pages effectué
+        - Début d'ideé front-end pour la page "notre équipe" et "nos prestations". géré en responsive aussi.
 
 Lundi 04 Mai
     09h00 - 9h40
-        Réalisation petite urgence pour un élément graphique (menu d'un restau)
-        Approfondissement page prestation & notre équipe
+        - Réalisation petite urgence pour un élément graphique (menu d'un restau)
+        - Approfondissement page prestation & notre équipe
     13h00 - 15h00
-        Créations des pages de prestation single (en attente de plus de contenu)
+        - Créations des pages de prestation single (en attente de plus de contenu)
     15h00 - 16h30
-        Retouchage page d'accueil
-        préparation de la BDD mise à jour
+        - Retouchage page d'accueil
+        - préparation de la BDD mise à jour
     
 Mardi 05 Mai
     09h00 - 10h00
-        "Finalisation" de la v1, en attente du contenu réel
+        - "Finalisation" de la v1, en attente du contenu réel
     10h00 - 12h00
-        Apprentissage REACT sur mon "temps libre"
-    13h00 - 15h00
-        Apprentissage REACT
+        - Apprentissage REACT sur mon "temps libre"
+    13h00 - - 15h00
+        - Apprentissage REACT
+
+Mercredi 06 Mai
+    09h00 - 12h00
+        - Révisions lignes de commande Ubuntu
+    13h00 - 17h00
+        - Tutoriel Swift
+    
+Jeudi 07 Mai
+    09h00 - 11h00
+        - Tutoriel Swift
+    11h00 - 12h00
+        - Dépannage pour restaurant Mc Krousty
+
+Retour Mardi 12 Mai
+    09h00 - 16h30
+        - Apprentissage plugin pour gestion de session utilisateur
+        - Installation de la creation, connexion, deconnexion, validation par mail, mdp oublié et mailtrap pour tester en local
+    16h30 - 17h00
+        - Ajustement visuel footer et responsive sur le site
+
+    
     

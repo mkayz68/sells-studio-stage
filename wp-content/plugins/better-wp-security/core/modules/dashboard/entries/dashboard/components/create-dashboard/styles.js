@@ -10,7 +10,7 @@ import { Modal, TextControl } from '@wordpress/components';
 import { useMediaQuery } from '@wordpress/compose';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Heading, Surface, Text } from '@ithemes/ui';
 

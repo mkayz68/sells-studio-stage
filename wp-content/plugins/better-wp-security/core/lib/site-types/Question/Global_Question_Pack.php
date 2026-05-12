@@ -27,7 +27,7 @@ final class Global_Question_Pack implements Questions_Provider {
 				}
 
 				public function get_description(): string {
-					return __( 'For certain firewall features to function, Solid Security must be properly configured to identify the IP addresses of your site’s visitors and users. Security Check Pro automatically configures the correct IP detection method based upon your server configuration.<br><br>Enabling Security Check Pro allows your site to periodically make an API request to SolidWP servers to discover your current server configuration and set/update the IP detection method. No user information is sent to SolidWP.', 'better-wp-security' );
+					return __( 'For certain firewall features to function, Kadence Security must be properly configured to identify the IP addresses of your site’s visitors and users. Security Check Pro automatically configures the correct IP detection method based upon your server configuration.<br><br>Enabling Security Check Pro allows your site to periodically make an API request to Kadence servers to discover your current server configuration and set/update the IP detection method. No user information is sent to Kadence.', 'better-wp-security' );
 				}
 
 				public function get_answer_schema(): array {
@@ -60,7 +60,7 @@ final class Global_Question_Pack implements Questions_Provider {
 				}
 
 				public function get_description(): string {
-					return __( 'Solid Security relies on accurately identifying the IP addresses of your site’s visitors and users to block and/or authorize them.', 'better-wp-security' )
+					return __( 'Kadence Security relies on accurately identifying the IP addresses of your site’s visitors and users to block and/or authorize them.', 'better-wp-security' )
 					       . ' <a href="https://go.solidwp.com/about-ip-detection" target="_blank">'
 					       . __( 'Read more about IP detection.', 'better-wp-security' )
 					       . '</a>';

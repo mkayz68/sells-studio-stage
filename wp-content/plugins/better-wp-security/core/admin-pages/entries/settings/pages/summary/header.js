@@ -7,7 +7,7 @@ import { useSelect } from '@wordpress/data';
 import { createInterpolateElement } from '@wordpress/element';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button, Heading, Text, TextSize, TextVariant, TextWeight } from '@ithemes/ui';
 
@@ -37,7 +37,7 @@ export default function Header( { installType } ) {
 				<Heading
 					level={ 1 }
 					text={ installType === 'free'
-						? __( 'Great Work! Thanks to Solid Security Basic, your site is secure and ready for your users.', 'better-wp-security' )
+						? __( 'Great Work! Thanks to Kadence Security Basic, your site is secure and ready for your users.', 'better-wp-security' )
 						: __( 'Great Work! Your site is ready and is more secure than ever!', 'better-wp-security' ) }
 					size={ TextSize.GIGANTIC }
 					weight={ TextWeight.NORMAL }
@@ -81,7 +81,7 @@ function ResolveVulnerabilities( { vulnerabilities, link, installType } ) {
 					<Flex direction="column" gap={ 3 }>
 						<Heading level={ 3 } size={ TextSize.HUGE } text={ __( 'Resolve the vulnerabilities we found', 'better-wp-security' ) } weight={ TextWeight.NORMAL } />
 						<Text
-							text={ __( 'Now that your initial setup for Solid Security is complete, it’s time to take care of those vulnerabilities we detected earlier.', 'better-wp-security' ) }
+							text={ __( 'Now that your initial setup for Kadence Security is complete, it’s time to take care of those vulnerabilities we detected earlier.', 'better-wp-security' ) }
 							variant={ TextVariant.MUTED }
 						/>
 					</Flex>
@@ -93,7 +93,7 @@ function ResolveVulnerabilities( { vulnerabilities, link, installType } ) {
 				<Flex direction="column" gap={ 2 }>
 					<Heading level={ 5 } text={ __( 'Stay safe from critical vulnerabilities, even while you sleep', 'better-wp-security' ) } size={ TextSize.SUBTITLE_SMALL } />
 					<Text as="p" text={ createInterpolateElement(
-						__( 'Patchstack’s Virtual Patching, available in <a>Solid Security Pro</a>, protects you against the most important vulnerabilities, 24/7.', 'better-wp-security' ),
+						__( 'Patchstack’s Virtual Patching, available in <a>Kadence Security Pro</a>, protects you against the most important vulnerabilities, 24/7.', 'better-wp-security' ),
 						{
 							// eslint-disable-next-line jsx-a11y/anchor-has-content
 							a: <a href="https://go.solidwp.com/go-pro-onboarding" />,

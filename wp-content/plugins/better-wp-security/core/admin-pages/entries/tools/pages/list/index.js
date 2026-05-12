@@ -5,7 +5,7 @@ import { __ } from '@wordpress/i18n';
 import { useEffect, useState } from '@wordpress/element';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { TextSize, TextVariant } from '@ithemes/ui';
 

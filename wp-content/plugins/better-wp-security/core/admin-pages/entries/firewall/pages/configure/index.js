@@ -13,7 +13,7 @@ import { useDispatch, useSelect } from '@wordpress/data';
 import { store as noticesStore } from '@wordpress/notices';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import {
 	SecondaryNavigation,

@@ -270,9 +270,9 @@ export function useModuleRequirementsValidator() {
 
 			if ( module.requirements.load && isForMode( module.requirements.load ) && requirementsInfo ) {
 				if ( module.requirements.load.type === 'normal' && requirementsInfo.load === 'early' ) {
-					error.add( 'load', __( 'Loading Solid Security via an MU-Plugin is not supported.', 'better-wp-security' ) );
+					error.add( 'load', __( 'Loading Kadence Security via an MU-Plugin is not supported.', 'better-wp-security' ) );
 				} else if ( module.requirements.load.type === 'early' && requirementsInfo.load === 'normal' ) {
-					error.add( 'load', __( 'Loading Solid Security without an MU-Plugin is not supported.', 'better-wp-security' ) );
+					error.add( 'load', __( 'Loading Kadence Security without an MU-Plugin is not supported.', 'better-wp-security' ) );
 				}
 			}
 

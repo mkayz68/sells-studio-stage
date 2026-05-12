@@ -4,14 +4,14 @@
 import styled from '@emotion/styled';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button, Surface, Text } from '@ithemes/ui';
 
 /**
  * Internal dependencies
  */
-import { LogoColorPro, UpsellGradient } from '@ithemes/security-style-guide';
+import { LogoColorPro } from '@ithemes/security-style-guide';
 
 export const StyledMainContainer = styled( Surface )`
 	position: relative;
@@ -38,14 +38,6 @@ export const StyledProLogo = styled( LogoColorPro )`
 	max-width: 644px;
 	margin: 0 auto;
 	width: 100%;
-`;
-
-export const StyledUpsellGradient = styled( UpsellGradient )`
-	opacity: 0.9;
-	position: fixed;
-	transform: translate(40%, 10%);
-	filter: blur( 10px );
-	z-index: 0;
 `;
 
 export const StyledUpsellText = styled( Text )`

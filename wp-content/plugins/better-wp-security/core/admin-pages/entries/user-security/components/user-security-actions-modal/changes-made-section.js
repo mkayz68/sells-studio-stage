@@ -11,7 +11,7 @@ import {
 } from '@wordpress/icons';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button } from '@ithemes/ui';
 

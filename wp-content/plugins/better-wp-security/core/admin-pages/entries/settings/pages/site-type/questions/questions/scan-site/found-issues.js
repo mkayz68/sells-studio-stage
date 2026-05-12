@@ -5,7 +5,7 @@ import { Flex } from '@wordpress/components';
 import { __, _n, sprintf } from '@wordpress/i18n';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button, Heading, Text, TextSize, TextVariant, TextWeight } from '@ithemes/ui';
 import { Patchstack } from '@ithemes/security-style-guide';
@@ -59,8 +59,8 @@ export default function FoundIssues( { issues, onAnswer } ) {
 					<Text
 						text={
 							installType === 'free'
-								? __( 'Pro Tip: Solid Security can scan your site twice a day to ensure it stays free of any vulnerabilities, just enable the feature below.', 'better-wp-security' )
-								: __( 'Pro Tip: Solid Security will scan your site twice a day to ensure it stays free of any vulnerabilities.', 'better-wp-security' )
+								? __( 'Pro Tip: Kadence Security can scan your site twice a day to ensure it stays free of any vulnerabilities, just enable the feature below.', 'better-wp-security' )
+								: __( 'Pro Tip: Kadence Security will scan your site twice a day to ensure it stays free of any vulnerabilities.', 'better-wp-security' )
 						}
 						variant={ TextVariant.MUTED }
 						weight={ TextWeight.HEAVY }
@@ -74,14 +74,14 @@ export default function FoundIssues( { issues, onAnswer } ) {
 			<Flex direction="column" gap={ 3 }>
 				<Heading level={ 4 } text={ __( 'Here’s what’s next', 'better-wp-security' ) } size={ TextSize.EXTRA_LARGE } weight={ TextWeight.NORMAL } />
 				<Text
-					text={ __( 'We will revisit and resolve your existing vulnerabilities once you’ve set up Solid Security.', 'better-wp-security' ) }
+					text={ __( 'We will revisit and resolve your existing vulnerabilities once you’ve set up Kadence Security.', 'better-wp-security' ) }
 					variant={ TextVariant.MUTED }
 					weight={ TextWeight.HEAVY }
 				/>
 			</Flex>
 
 			<StyledCardGraphic position="right">
-				<img src={ vulnPreview } alt={ __( 'Preview of the Vulnerabilities page in Solid Security.', 'better-wp-security' ) } width={ 345 } height={ 120 } />
+				<img src={ vulnPreview } alt={ __( 'Preview of the Vulnerabilities page in Kadence Security.', 'better-wp-security' ) } width={ 345 } height={ 120 } />
 			</StyledCardGraphic>
 
 			<Flex direction="column" gap={ 2 }>

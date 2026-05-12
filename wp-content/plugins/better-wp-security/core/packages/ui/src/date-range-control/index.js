@@ -21,7 +21,7 @@ import { __, sprintf } from '@wordpress/i18n';
 import { dateI18n, format, getDate, isInTheFuture } from '@wordpress/date';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button } from '@ithemes/ui';
 

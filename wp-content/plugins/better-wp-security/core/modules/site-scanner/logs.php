@@ -72,15 +72,15 @@ class ITSEC_Site_Scanner_Logs {
 		$scan = $factory->for_log_item( $entry );
 
 		if ( is_wp_error( $scan ) ) {
-			return esc_html__( 'The Solid Security site scan encountered an error.', 'better-wp-security' );
+			return esc_html__( 'The Kadence Security site scan encountered an error.', 'better-wp-security' );
 		}
 
 		$count = $scan->count( \iThemesSecurity\Site_Scanner\Status::WARN );
 
 		return esc_html( sprintf(
 			_n(
-				'Solid Security found %s issue during a site scan.',
-				'Solid Security found %s issues during a site scan.',
+				'Kadence Security found %s issue during a site scan.',
+				'Kadence Security found %s issues during a site scan.',
 				$count,
 				'better-wp-security'
 			),

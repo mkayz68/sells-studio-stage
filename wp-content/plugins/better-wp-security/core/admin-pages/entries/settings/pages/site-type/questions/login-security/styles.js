@@ -10,7 +10,7 @@ import { css } from '@emotion/css';
 import { Flex } from '@wordpress/components';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button, Surface } from '@ithemes/ui';
 
@@ -35,7 +35,7 @@ export const StyledLoginSecurityContent = styled.div`
 
 export const StyledGraphicContainer = styled.figure`
 	background: black;
-	background-image: radial-gradient(circle at 56% -151%, #5d35ff, #5933ef 43%, #2f2352 66%, #261c43 75%, rgba(35, 35, 35, 0) 95%);
+	background-image: radial-gradient(circle at 56% -151%, #3672ff, #5f95ed 43%, #081e52 66%, #071943 75%, rgba(35, 35, 35, 0) 95%);
 	flex: 2;
 	padding: 20px 0 90px 0;
 	margin: 0;

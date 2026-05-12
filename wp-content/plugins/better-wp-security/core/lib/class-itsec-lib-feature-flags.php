@@ -197,7 +197,7 @@ class ITSEC_Lib_Feature_Flags {
 		}
 
 		if ( ! empty( $config['disabled'] ) ) {
-			return [ 'remote', __( 'Remotely disabled by SolidWP.', 'better-wp-security' ) ];
+			return [ 'remote', __( 'Remotely disabled by Kadence.', 'better-wp-security' ) ];
 		}
 
 		$rates = ITSEC_Modules::get_setting( 'feature-flags', 'rates' );

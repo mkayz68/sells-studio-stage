@@ -8,7 +8,7 @@
     "group": {
       "type": "multiple",
       "title": "Enable Dashboard Creation",
-      "description": "Allow users to create new Solid Security Dashboards."
+      "description": "Allow users to create new Kadence Security Dashboards."
     }
   },
   "settings": {

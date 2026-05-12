@@ -30,7 +30,7 @@ __( 'The path on your machine where backup files should be stored. For added sec
 __( 'Backups to Retain', 'better-wp-security' );
 __( 'Limit the number of backups stored locally (on this server). Any older backups beyond this number will be removed. Enter “0” to retain all backups.', 'better-wp-security' );
 __( 'Compress Backup Files', 'better-wp-security' );
-__( 'By default, Solid Security will zip backup files to reduce file size. You may need to turn this off if you are having problems with backups.', 'better-wp-security' );
+__( 'By default, Kadence Security will zip backup files to reduce file size. You may need to turn this off if you are having problems with backups.', 'better-wp-security' );
 __( 'Backup Tables', 'better-wp-security' );
 __( 'Specify which tables should be included or excluded from backups. WordPress Core tables are always included.', 'better-wp-security' );
 __( 'Last Run', 'better-wp-security' );
@@ -46,7 +46,7 @@ __( 'List of tables to include in each backup.', 'better-wp-security' );
 # BEGIN MODULE: ban-users
 __( 'Ban Users', 'better-wp-security' );
 __( 'Block specific IP addresses and user agents from accessing the site.', 'better-wp-security' );
-__( 'Solid Security automatically adds an IP to the ban list once it meets the Ban Threshold requirements. The Ban Threshold setting can be adjusted in the [Global Settings](itsec://settings/configure/global). You can manually add IPs to the ban list from the Security Dashboard using the Banned IPs card.', 'better-wp-security' );
+__( 'Kadence Security automatically adds an IP to the ban list once it meets the Ban Threshold requirements. The Ban Threshold setting can be adjusted in the [Global Settings](itsec://settings/configure/global). You can manually add IPs to the ban list from the Security Dashboard using the Banned IPs card.', 'better-wp-security' );
 __( 'blacklist', 'better-wp-security' );
 __( 'Default Ban List', 'better-wp-security' );
 __( 'As a getting-started point you can include the HackRepair.com ban list developed by Jim Walker.', 'better-wp-security' );
@@ -81,8 +81,8 @@ __( 'Advanced feature to rename the wp-content directory to a different name.', 
 # BEGIN MODULE: core
 __( 'Core', 'better-wp-security' );
 __( 'Set Encryption Key', 'better-wp-security' );
-__( 'Sets a secure key that Solid Security uses to encrypt sensitive values like Two-Factor codes.', 'better-wp-security' );
-__( 'Solid Security will add a constant to your website’s <code>wp-config.php</code> file named <code>ITSEC_ENCRYPTION_KEY</code>.', 'better-wp-security' );
+__( 'Sets a secure key that Kadence Security uses to encrypt sensitive values like Two-Factor codes.', 'better-wp-security' );
+__( 'Kadence Security will add a constant to your website’s <code>wp-config.php</code> file named <code>ITSEC_ENCRYPTION_KEY</code>.', 'better-wp-security' );
 __( 'encryption', 'better-wp-security' );
 __( 'Confirm Reset Key', 'better-wp-security' );
 __( 'Confirm you want to reset the encryption key to a new value.', 'better-wp-security' );
@@ -93,16 +93,16 @@ __( 'encryption', 'better-wp-security' );
 __( 'Previous Key', 'better-wp-security' );
 __( 'Provide the previous value of <code>ITSEC_ENCRYPTION_KEY</code>.', 'better-wp-security' );
 __( 'Create MU Plugin Loader', 'better-wp-security' );
-__( 'For better security and optimized performance Solid Security can be loaded as an MU-Plugin. Run this tool to automatically create the MU Plugin.', 'better-wp-security' );
+__( 'For better security and optimized performance Kadence Security can be loaded as an MU-Plugin. Run this tool to automatically create the MU Plugin.', 'better-wp-security' );
 __( 'Remove MU Plugin Loader', 'better-wp-security' );
-__( 'For better security and optimized performance Solid Security is being loaded as an MU-Plugin. Run this tool to automatically remove the MU Plugin.', 'better-wp-security' );
+__( 'For better security and optimized performance Kadence Security is being loaded as an MU-Plugin. Run this tool to automatically remove the MU Plugin.', 'better-wp-security' );
 # END MODULE: core
 
 # BEGIN MODULE: dashboard
 __( 'Security Dashboard', 'better-wp-security' );
 __( 'See a real-time overview of the security activity on your website with this dynamic dashboard.', 'better-wp-security' );
 __( 'Enable Dashboard Creation', 'better-wp-security' );
-__( 'Allow users to create new Solid Security Dashboards.', 'better-wp-security' );
+__( 'Allow users to create new Kadence Security Dashboards.', 'better-wp-security' );
 # END MODULE: dashboard
 
 # BEGIN MODULE: database-prefix
@@ -117,7 +117,7 @@ __( 'Email Confirmation', 'better-wp-security' );
 
 # BEGIN MODULE: feature-flags
 __( 'Feature Flags', 'better-wp-security' );
-__( 'Feature Flags in Solid Security allow you to try experimental features before they are released.', 'better-wp-security' );
+__( 'Feature Flags in Kadence Security allow you to try experimental features before they are released.', 'better-wp-security' );
 __( 'Enabled Features', 'better-wp-security' );
 __( 'Select which experimental features you’d like to enable.', 'better-wp-security' );
 # END MODULE: feature-flags
@@ -131,7 +131,7 @@ __( 'Enter a list of file paths to exclude from each File Change scan.', 'better
 __( 'Ignore File Types', 'better-wp-security' );
 __( 'File types listed here will not be checked for changes. While it is possible to change files such as images it is quite rare and nearly all known WordPress attacks exploit php, js and other text files.', 'better-wp-security' );
 __( 'Compare Files Online', 'better-wp-security' );
-__( 'When any WordPress core file or file in a SolidWP plugin has been changed on your system, this feature will compare it with the version on WordPress.org or SolidWP (as appropriate) to determine if the change was malicious. Currently this feature only works with WordPress core files, plugins on the WordPress.org directory and SolidWP plugins (plugins and themes from other sources will be added as available).', 'better-wp-security' );
+__( 'When any WordPress core file or file in a Kadence plugin has been changed on your system, this feature will compare it with the version on WordPress.org or Kadence (as appropriate) to determine if the change was malicious. Currently this feature only works with WordPress core files, plugins on the WordPress.org directory and Kadence plugins (plugins and themes from other sources will be added as available).', 'better-wp-security' );
 __( 'Excluded Files', 'better-wp-security' );
 __( 'Online Files', 'better-wp-security' );
 # END MODULE: file-change
@@ -163,33 +163,33 @@ __( 'The number of minutes a firewall violation should be remembered.', 'better-
 
 # BEGIN MODULE: global
 __( 'Global Settings', 'better-wp-security' );
-__( 'Configure basic settings that control how Solid Security functions.', 'better-wp-security' );
-__( 'Changes made here are applied globally throughout Solid Security’s settings. For example, the lockout settings and messages are used by all of Solid Security’s lockout features.', 'better-wp-security' );
+__( 'Configure basic settings that control how Kadence Security functions.', 'better-wp-security' );
+__( 'Changes made here are applied globally throughout Kadence Security’s settings. For example, the lockout settings and messages are used by all of Kadence Security’s lockout features.', 'better-wp-security' );
 __( 'Write to Files', 'better-wp-security' );
-__( 'Allow Solid Security to write to wp-config.php and .htaccess automatically. If this box is not checked, you will need to edit those files manually.', 'better-wp-security' );
+__( 'Allow Kadence Security to write to wp-config.php and .htaccess automatically. If this box is not checked, you will need to edit those files manually.', 'better-wp-security' );
 __( 'NGINX Conf File', 'better-wp-security' );
 __( 'This path must be writable by WordPress. For security reasons, we recommend you do not include it in your website’s root folder.', 'better-wp-security' );
 __( 'Minutes to Lockout', 'better-wp-security' );
 __( 'The length of time an IP address or user will be locked out from this site after hitting the limit for failed logins. The default setting of 15 minutes is recommended. Increasing it could prevent attackers from being banned.', 'better-wp-security' );
 __( 'Days to Remember Lockouts', 'better-wp-security' );
-__( 'How many days should Solid Security remember a lockout? This does not affect the logs generated when creating a lockout.', 'better-wp-security' );
+__( 'How many days should Kadence Security remember a lockout? This does not affect the logs generated when creating a lockout.', 'better-wp-security' );
 __( 'Ban Repeat Offender', 'better-wp-security' );
 __( 'Permanently add a locked-out IP address to the “Ban Users” list after reaching the configured “Ban Threshold.”', 'better-wp-security' );
 __( 'Ban Threshold', 'better-wp-security' );
-__( 'The number of lockouts Solid Security must remember before permanently banning the attacker.', 'better-wp-security' );
+__( 'The number of lockouts Kadence Security must remember before permanently banning the attacker.', 'better-wp-security' );
 __( 'IP Lockout Message', 'better-wp-security' );
 __( 'Display this message when an IP address has been locked out.', 'better-wp-security' );
 __( 'User Lockout Message', 'better-wp-security' );
 __( 'The message to display to a user when they have been locked out.', 'better-wp-security' );
 __( 'Community Lockout Message', 'better-wp-security' );
-__( 'The message to display to a user when their IP has been flagged as suspicious by the SolidWP network.', 'better-wp-security' );
+__( 'The message to display to a user when their IP has been flagged as suspicious by the Kadence network.', 'better-wp-security' );
 __( 'Automatically Temporarily Authorize IPs', 'better-wp-security' );
-__( 'Whenever an administrator user accesses the website, Solid Security will prevent their last used IP from being locked out for 24 hours.', 'better-wp-security' );
+__( 'Whenever an administrator user accesses the website, Kadence Security will prevent their last used IP from being locked out for 24 hours.', 'better-wp-security' );
 __( 'Authorized IPs', 'better-wp-security' );
-__( 'Enter a list of IP addresses that should not be locked out by Solid Security.', 'better-wp-security' );
+__( 'Enter a list of IP addresses that should not be locked out by Kadence Security.', 'better-wp-security' );
 __( 'whitelist', 'better-wp-security' );
 __( 'How should event logs be kept', 'better-wp-security' );
-__( 'Solid Security can log events in two different ways. Each has advantages and disadvantages. Database Only logs puts all events in the database with your posts and other WordPress data. This makes it easy to retrieve and process that information, but it can slow down your site if the log table gets very large. File Only logging is very fast, but the plugin does not process the logs itself. That would take far more server resources. For most users or smaller sites, Database Only logging should be fine. If you have a very large site or log processing software, then File Only might be a better option.', 'better-wp-security' );
+__( 'Kadence Security can log events in two different ways. Each has advantages and disadvantages. Database Only logs puts all events in the database with your posts and other WordPress data. This makes it easy to retrieve and process that information, but it can slow down your site if the log table gets very large. File Only logging is very fast, but the plugin does not process the logs itself. That would take far more server resources. For most users or smaller sites, Database Only logging should be fine. If you have a very large site or log processing software, then File Only might be a better option.', 'better-wp-security' );
 __( 'Database Only', 'better-wp-security' );
 __( 'File Only', 'better-wp-security' );
 __( 'Both', 'better-wp-security' );
@@ -200,23 +200,23 @@ __( 'The number of days file logs should be kept. File logs will be rotated once
 __( 'Path to Log Files', 'better-wp-security' );
 __( 'This folder must be writable. For security reasons, we recommend you do not save logs in your website\'s root folder.', 'better-wp-security' );
 __( 'Proxy Detection', 'better-wp-security' );
-__( 'Configure the method Solid Security uses to identify the IP address of your site’s visitors and users. Choose “Security Check Scan” to allow Solid Security to automatically configure the correct method. When this setting is configured incorrectly, key firewall features will not work properly.<br>[Read more about IP Detection](https://go.solidwp.com/about-ip-detection).', 'better-wp-security' );
+__( 'Configure the method Kadence Security uses to identify the IP address of your site’s visitors and users. Choose “Security Check Scan” to allow Kadence Security to automatically configure the correct method. When this setting is configured incorrectly, key firewall features will not work properly.<br>[Read more about IP Detection](https://go.solidwp.com/about-ip-detection).', 'better-wp-security' );
 __( 'Proxy Header', 'better-wp-security' );
 __( 'Select the HTTP header record used by your proxy server or load balancer to forward the IP address of each site visitor. Contact your hosting provider or proxy service provider (Cloudflare, etc.) to determine the correct setting. When configured correctly, the “Detected IP” shown above should match your current IP address.', 'better-wp-security' );
 __( 'Hide Security Menu in Admin Bar', 'better-wp-security' );
-__( 'Remove the Security Messages Menu from the Admin Bar. Notifications will only appear on the Solid Security dashboard and settings pages.', 'better-wp-security' );
+__( 'Remove the Security Messages Menu from the Admin Bar. Notifications will only appear on the Kadence Security dashboard and settings pages.', 'better-wp-security' );
 __( 'Allow Data Sharing', 'better-wp-security' );
-__( 'If you opt-in, some data about your usage of this plugin and future StellarWP Products will be shared with our teams (so they can work their butts off to improve). We will also share some helpful info on WordPress, and our products from time to time. If you don\'t opt in, that\'s okay! Our products still work just fine.<br>[Read more about usage sharing](https://go.solidwp.com/opt-in-usage-sharing).', 'better-wp-security' );
+__( 'Want to help shape the future of Kadence Security? Opting in shares anonymous usage data with our team at Liquid Web, the company behind Kadence Security, giving us the insights we need to keep improving the tools you rely on.<br>[Read more about usage sharing](https://go.solidwp.com/opt-in-usage-sharing).', 'better-wp-security' );
 __( 'Show Error Codes', 'better-wp-security' );
-__( 'Each error message in Solid Security has an associated error code that can help diagnose an issue. Changing this setting to “Yes” causes these codes to be displayed. This setting should be left set to “No” unless Solid Security\'s customer success team requests that you change it.', 'better-wp-security' );
+__( 'Each error message in Kadence Security has an associated error code that can help diagnose an issue. Changing this setting to “Yes” causes these codes to be displayed. This setting should be left set to “No” unless Kadence Security\'s customer success team requests that you change it.', 'better-wp-security' );
 __( 'Lockouts', 'better-wp-security' );
 __( 'Lockout Messages', 'better-wp-security' );
 __( 'Authorized IPs', 'better-wp-security' );
 __( 'Logging', 'better-wp-security' );
 __( 'IP Detection', 'better-wp-security' );
 __( 'Other', 'better-wp-security' );
-__( 'Manage Solid Security', 'better-wp-security' );
-__( 'Allow users to manage Solid Security.', 'better-wp-security' );
+__( 'Manage Kadence Security', 'better-wp-security' );
+__( 'Allow users to manage Kadence Security.', 'better-wp-security' );
 __( 'Identify Server IPs', 'better-wp-security' );
 __( 'Determines the list of IP addresses your server uses when making HTTP requests.', 'better-wp-security' );
 __( 'The correct list of server IPs is important to prevent erroneous lockouts and trusted device errors.', 'better-wp-security' );
@@ -272,10 +272,10 @@ __( 'API Configuration', 'better-wp-security' );
 
 # BEGIN MODULE: notification-center
 __( 'Notification Center', 'better-wp-security' );
-__( 'Manage and configure email notifications sent by Solid Security related to various features.', 'better-wp-security' );
+__( 'Manage and configure email notifications sent by Kadence Security related to various features.', 'better-wp-security' );
 __( 'Using the Notification Center, you can set the default recipients, enable the security digest email, customize email notifications, and more.', 'better-wp-security' );
 __( 'From Email', 'better-wp-security' );
-__( 'Solid Security will send notifications from this email address. Leave blank to use the WordPress default.', 'better-wp-security' );
+__( 'Kadence Security will send notifications from this email address. Leave blank to use the WordPress default.', 'better-wp-security' );
 __( 'Default Recipients', 'better-wp-security' );
 __( 'Set the default recipients for any admin-facing notifications.', 'better-wp-security' );
 # END MODULE: notification-center
@@ -300,7 +300,7 @@ __( 'This shouldn’t be done periodically, but only if you suspect your site ma
 
 # BEGIN MODULE: security-check-pro
 __( 'Security Check Pro', 'better-wp-security' );
-__( 'Detects the correct way to identify user IP addresses based on your server configuration by making an API request to SolidWP.com servers. No user information is sent to SolidWP. [Read our Privacy Policy](https://go.solidwp.com/solid-privacy-policy).', 'better-wp-security' );
+__( 'Detects the correct way to identify user IP addresses based on your server configuration by making an API request to Kadence servers. No user information is sent to Kadence. [Read our Privacy Policy](https://go.solidwp.com/solid-privacy-policy).', 'better-wp-security' );
 __( 'Detects the correct way to identify user IP addresses based on your server configuration.', 'better-wp-security' );
 # END MODULE: security-check-pro
 
@@ -352,7 +352,7 @@ __( '2fa', 'better-wp-security' );
 __( 'multi-factor', 'better-wp-security' );
 __( 'mfa', 'better-wp-security' );
 __( 'Authentication Methods Available to Users', 'better-wp-security' );
-__( 'Solid Security supports multiple two-factor authentication methods: mobile apps, email messages, and backup codes. Selecting “All Methods” is highly recommended so that users can choose the method that works the best for them.', 'better-wp-security' );
+__( 'Kadence Security supports multiple two-factor authentication methods: mobile apps, email messages, and backup codes. Selecting “All Methods” is highly recommended so that users can choose the method that works the best for them.', 'better-wp-security' );
 __( 'All Methods (recommended)', 'better-wp-security' );
 __( 'All Except Email', 'better-wp-security' );
 __( 'Select Methods Manually', 'better-wp-security' );
@@ -364,7 +364,7 @@ __( 'Customize the text shown to users at the beginning of the Two-Factor onboar
 __( 'Methods', 'better-wp-security' );
 __( 'Setup Flow', 'better-wp-security' );
 __( 'Skip Two-Factor Onboarding', 'better-wp-security' );
-__( 'By default, when a user logs in via the WordPress Login Page, Solid Security will prompt them to setup Two-Factor. Optionally, you can skip the two-factor authentication on-boarding process for certain users. Users can still manually enroll in two-factor through their WordPress admin profile.', 'better-wp-security' );
+__( 'By default, when a user logs in via the WordPress Login Page, Kadence Security will prompt them to setup Two-Factor. Optionally, you can skip the two-factor authentication on-boarding process for certain users. Users can still manually enroll in two-factor through their WordPress admin profile.', 'better-wp-security' );
 __( 'Application Passwords', 'better-wp-security' );
 __( 'Use Application Passwords to allow authentication without providing your actual password when using non-traditional login methods such as XML-RPC or the REST API. Application passwords are easily revoked and can never be used in the traditional login process.', 'better-wp-security' );
 # END MODULE: two-factor

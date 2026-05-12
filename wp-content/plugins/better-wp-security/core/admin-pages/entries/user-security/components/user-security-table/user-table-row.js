@@ -12,7 +12,7 @@ import { __, _x, sprintf } from '@wordpress/i18n';
 import { useState } from '@wordpress/element';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button, Text, TextVariant, TextWeight } from '@ithemes/ui';
 

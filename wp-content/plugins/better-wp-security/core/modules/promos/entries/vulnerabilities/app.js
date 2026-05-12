@@ -6,7 +6,7 @@ import { external as linkIcon } from '@wordpress/icons';
 import { useSelect } from '@wordpress/data';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button, Notice } from '@ithemes/ui';
 

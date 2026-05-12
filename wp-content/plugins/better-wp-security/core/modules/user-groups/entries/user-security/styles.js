@@ -9,7 +9,7 @@ import styled from '@emotion/styled';
 import { Modal } from '@wordpress/components';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button, Text } from '@ithemes/ui';
 

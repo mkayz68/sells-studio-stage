@@ -62,7 +62,7 @@ export default function StellarSites( { installType } ) {
 						{ __( 'Build & Protect Sites Faster.', 'better-wp-security' ) }
 					</StyledHeadline>
 					<StyledSubhead>
-						{ __( 'Introducing StellarSites from StellarWP', 'better-wp-security' ) }
+						{ __( 'Introducing StellarSites from Nexcess', 'better-wp-security' ) }
 					</StyledSubhead>
 					<StyledButton href={ link }>{ text }</StyledButton>
 				</StyledPrimaryColumn>

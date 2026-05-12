@@ -7,7 +7,7 @@ import { useDispatch, useSelect } from '@wordpress/data';
 import { useState } from '@wordpress/element';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button, Heading, MessageList, Text, TextSize, TextVariant, TextWeight } from '@ithemes/ui';
 import { Patchstack } from '@ithemes/security-style-guide';

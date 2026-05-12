@@ -12,7 +12,7 @@ import { createSlotFill } from '@wordpress/components';
 import { useDispatch } from '@wordpress/data';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import {
 	TextWeight,

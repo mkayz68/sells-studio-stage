@@ -8,7 +8,7 @@ import { __ } from '@wordpress/i18n';
 import { useInstanceId } from '@wordpress/compose';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button, PageHeader, Surface } from '@ithemes/ui';
 

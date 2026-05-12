@@ -1,9 +1,9 @@
-=== Solid Security – Password, Two Factor Authentication, and Brute Force Protection ===
+=== Kadence Security – Password, Two Factor Authentication, and Brute Force Protection ===
 Contributors: ithemes, timothyblynjacobs, lisacee, solidwp
 Tags: security, malware, two factor authentication, brute force protection, password protection
 Requires at least: 6.5
 Tested up to: 6.9
-Stable tag: 9.4.7
+Stable tag: 10.0.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,7 +15,7 @@ Released under the terms of the GNU General Public License.
 
 == Description ==
 
-= Reduce your WordPress website’s risk to nearly zero with Solid Security =
+= Reduce your WordPress website’s risk to nearly zero with Kadence Security =
 
 [Formerly iThemes Security. Looking for iThemes? Learn more here.](https://go.solidwp.com/wporg-security-ithemes)
 
@@ -23,21 +23,19 @@ On average, 30,000 websites are hacked every day.* Cyberattacks in the US increa
 
 You need a proactive, strategic approach to WordPress website security that protects your site from brute force attacks, malware infections, and other cyber threats.
 
-[Solid Security](https://go.solidwp.com/solid-security-pro) shields your site from cyberattacks and prevents security vulnerabilities. It automatically locks out bad users identified by our Brute Force Protection Network that is nearly 1 million sites strong and leverages your own blacklist. It secures and protects your most commonly attacked part of your WordPress website – user login authentication.
+[Kadence Security](https://go.solidwp.com/solid-security-pro) shields your site from cyberattacks and prevents security vulnerabilities. It automatically locks out bad users identified by our Brute Force Protection Network that is nearly 1 million sites strong and leverages your own blacklist. It secures and protects your most commonly attacked part of your WordPress website – user login authentication.
 
 With Patchstack integration (Pro) protects your site before you even have a chance to address vulnerabilities and before a plugin or theme vendor or developer can even issue a patch.
 
-That’s 24/7/365 always-on truly Solid Security.
-
-https://vimeo.com/863249227
+That’s 24/7/365 always-on truly Kadence Security.
 
 = 🌐 Secure your Website in Minutes =
 
-The Solid Security setup and onboarding experience allows anyone to secure their WordPress website in under 10 minutes, regardless of technical acumen. Knowing that you have enabled all the right security settings for your website will leave you feeling like your site has never been more secure.
+The Kadence Security setup and onboarding experience allows anyone to secure their WordPress website in under 10 minutes, regardless of technical acumen. Knowing that you have enabled all the right security settings for your website will leave you feeling like your site has never been more secure.
 
 = 📚 Security Site Templates to Fit Your Type of Site =
 
-Enabling the correct security settings based on the type of website you are building or maintaining is essential for proper security. An eCommerce site requires a different level of security than a basic blog. Solid Security Site Templates make it quick and easy to apply the right security settings for your website.
+Enabling the correct security settings based on the type of website you are building or maintaining is essential for proper security. An eCommerce site requires a different level of security than a basic blog. Kadence Security Site Templates make it quick and easy to apply the right security settings for your website.
 
 Choose from six different site templates to apply the type of security your site needs:
 
@@ -52,13 +50,13 @@ Choose from six different site templates to apply the type of security your site
 
 Every day, lots of activity is happening on your website that you can't see. Many of these activities can be related to your site's security, so monitoring these events is vital to keeping your site secure.
 
-The [Solid Security Pro](https://go.solidwp.com/solid-security-pro) plugin provides a real-time WordPress security dashboard that monitors security-related events on your site around the clock. The Solid Security Dashboard is a dynamic dashboard with all your WordPress website’s security activity stats in one place, including brute force attacks, banned users, active lockouts, site scan results, and user security stats (Pro).
+The [Kadence Security Pro](https://go.solidwp.com/solid-security-pro) plugin provides a real-time WordPress security dashboard that monitors security-related events on your site around the clock. The Kadence Security Dashboard is a dynamic dashboard with all your WordPress website’s security activity stats in one place, including brute force attacks, banned users, active lockouts, site scan results, and user security stats (Pro).
 
 = 🗝️ WordPress Login Security =
 
 Setting up and maintaining proper WordPress configurations and managing user account access are essential aspects of hardening your site against threats and vulnerabilities. Basic and Pro include features that address both of these factors.
 
-- **Two Factor Authentication (2FA)** - Make your WordPress login nearly impenetrable to attack by requiring users to enter a security code along with a password to login. The Solid Security plugin allows you to add two-factor authentication to your WordPress login with several authentication methods, including mobile apps like Authy and Google Authenticator, email, and backup codes.
+- **Two Factor Authentication (2FA)** - Make your WordPress login nearly impenetrable to attack by requiring users to enter a security code along with a password to login. The Kadence Security plugin allows you to add two-factor authentication to your WordPress login with several authentication methods, including mobile apps like Authy and Google Authenticator, email, and backup codes.
 
 - **Password Requirements** - Create and enforce a password policy for your users in less than a minute.
 
@@ -68,17 +66,17 @@ Setting up and maintaining proper WordPress configurations and managing user acc
 
 - **Trusted Devices** (Pro) - Identify the devices you and other users use to block session hijacking attacks and limit Administrator privileges to Trusted Devices.
 
-- **Automated Vulnerability Patching** (Pro) - Solid Security Pro includes Patchstack which patches vulnerabilities before you have a chance to and applies fixes even before a plugin developer or vendor has issued a patch.
+- **Automated Vulnerability Patching** (Pro) - Kadence Security Pro includes Patchstack which patches vulnerabilities before you have a chance to and applies fixes even before a plugin developer or vendor has issued a patch.
 
-Learn more about how [passwordless login is the future](https://go.solidwp.com/wporgpasswordless) and how Solid Security can help you implement it today.
+Learn more about how [passwordless login is the future](https://go.solidwp.com/wporgpasswordless) and how Kadence Security can help you implement it today.
 
 = 👨‍👩‍👧‍👦 The Right Amount of Security for Every User Level =
 
-Different types of user levels require different levels of security. During the Solid Security setup process, you can identify your website’s key user groups. Once the different types of users are identified, you can apply the level of security that is just right for each user group.
+Different types of user levels require different levels of security. During the Kadence Security setup process, you can identify your website’s key user groups. Once the different types of users are identified, you can apply the level of security that is just right for each user group.
 
 Here are a couple of examples of how User Groups are useful for securing your site:
 
-- **For Clients** – Let’s say you are configuring Solid Security on a client’s website. You will decide whether or not they are required to use two-factor authentication and if they should have access to the Solid Security settings.
+- **For Clients** – Let’s say you are configuring Kadence Security on a client’s website. You will decide whether or not they are required to use two-factor authentication and if they should have access to the Kadence Security settings.
 
 - **For Customers** – If you have an eCommerce website, you will decide whether or not you want to protect customer accounts with a password policy.
 
@@ -91,13 +89,13 @@ Local Brute Force Protection - Automatically identify and stop the most common m
 
 - **Local Brute Force Protection** (Basic and Pro) – Automatically identify and stop the most common method of attack on WordPress sites.
 
-- **Network Brute Force Protection** (Basic and Pro) - The network is the Solid Security community and is nearly one million websites strong. If someone tries to break into websites in the Solid Security community, Solid Security will block them across the network.
+- **Network Brute Force Protection** (Basic and Pro) - The network is the Kadence Security community and is nearly one million websites strong. If someone tries to break into websites in the Kadence Security community, Kadence Security will block them across the network.
 
-- **Magic Links** (Pro) - Security shouldn’t get in your way. Magic Links allow you to log in to your WordPress site while your username is locked out by the Solid Security Local Brute Force Protection feature.
+- **Magic Links** (Pro) - Security shouldn’t get in your way. Magic Links allow you to log in to your WordPress site while your username is locked out by the Kadence Security Local Brute Force Protection feature.
 
 = 🔍 Monitor Your Site's Security Health =
 
-- **File Change Detection** (Basic and Pro) - Solid Security logs changes made to your website that can help detect malicious activity on your website.
+- **File Change Detection** (Basic and Pro) - Kadence Security logs changes made to your website that can help detect malicious activity on your website.
 
 - **Site Scanner (Basic and Pro)** – Schedule checks to run four times per day (Basic) or hourly (Pro) for known vulnerabilities of WordPress core file, plugins and themes. Using the Google Safe Browsing API, the Site Scan also checks your Google’s blocklist status and will alert you if Google has found any malware on your website.
 
@@ -107,13 +105,13 @@ Local Brute Force Protection - Automatically identify and stop the most common m
 
 - **User Logging** (Pro) - Keep a record of user activity in your WordPress security logs, including login/logout, user registration, adding/removing plugins, switching themes, changes to posts and pages, and more.
 
-- **Version Management** (Pro) - The Version Management feature in Solid Security Pro allows you to auto-update WordPress, plugins, and themes. Beyond that, Version Management also has options to harden your website when you are running outdated software and scan for old websites.
+- **Version Management** (Pro) - The Version Management feature in Kadence Security Pro allows you to auto-update WordPress, plugins, and themes. Beyond that, Version Management also has options to harden your website when you are running outdated software and scan for old websites.
 
 = 🧠 Smarter, More Actionable Vulnerability Prioritization =
 
 Not all vulnerabilities pose the same level of risk, and the traditional Common Vulnerability Scoring System (CVSS) score doesn’t always reflect the realities of running a WordPress site.
 
-Solid Security now uses the Patchstack Priority score, which goes beyond CVSS to provide a real-world risk assessment tailored to WordPress. It factors in how likely a vulnerability is to be exploited and its actual impact on your site.
+Kadence Security now uses the Patchstack Priority score, which goes beyond CVSS to provide a real-world risk assessment tailored to WordPress. It factors in how likely a vulnerability is to be exploited and its actual impact on your site.
 
 With Patchstack Priority, you get a clearer picture of what really matters, helping you focus on the vulnerabilities that pose the greatest risk, and worry less about noise from low-impact issues.
 
@@ -131,22 +129,22 @@ With Patchstack Priority, you get a clearer picture of what really matters, help
 - **Change User ID 1** - Change the user ID for the first WordPress user, potentially preventing attacks that assume the user with ID1 exists and is an administrator.
 - **Change Database Prefix** - Change the database prefix that WordPress uses, potentially preventing attacks that assume the database prefix is "wp_".
 - **Check File Permission** - See the file and directory permissions of key areas of your site.
-- **Server Config Rules** - View or flush the server security rules generated by Solid Security.
-- **wp-config.php Rules** - View or flush the wp-config.php security rules generated by Solid Security.
+- **Server Config Rules** - View or flush the server security rules generated by Kadence Security.
+- **wp-config.php Rules** - View or flush the wp-config.php security rules generated by Kadence Security.
 - **Change WordPress Salts** - Secure your site after a successful attack by changing the WordPress salts used to secure cookies and security tokens.
 - **Hide Login URL** - change the login URL of your site, making it harder for bots to find your login page and attack it.
 
 = 🛟 Need Help? =
 
-Free support may be available with the community’s help in the WordPress.org support forums. Our Solid Security support team provides top-notch technical support to all our Solid Security Basic users there.
+Free support may be available with the community’s help in the WordPress.org support forums. Our Kadence Security support team provides top-notch technical support to all our Kadence Security Basic users there.
 
 **[Our Help Center will help you become an iThemes Security expert.](https://go.solidwp.com/security-help-center)**
 
-Get additional peace of mind with professional support from our expert team and pro features to take your site’s security to the next level with Solid Security Pro.
+Get additional peace of mind with professional support from our expert team and pro features to take your site’s security to the next level with Kadence Security Pro.
 
 = Recover From a Hacked Site =
 
-Solid Security makes regular backups of your WordPress database, allowing you to get back online quickly in the event of a hack or security breach. Use Solid Security to create and email database backups on a customizable schedule.
+Kadence Security makes regular backups of your WordPress database, allowing you to get back online quickly in the event of a hack or security breach. Use Kadence Security to create and email database backups on a customizable schedule.
 
 For complete site backups and the ability to restore or move WordPress to a new host or domain, check out [Solid Backups](https://go.solidwp.com/security-basic-solid-backups).
 
@@ -159,20 +157,20 @@ Manage more than one WordPress site? Release lockouts and keep your themes, plug
 
 == Frequently Asked Questions ==
 
-= Why does Solid Security require the latest WordPress version? Can't I use a slightly older version? =
+= Why does Kadence Security require the latest WordPress version? Can't I use a slightly older version? =
 * One of the best security practices for a WordPress site owner is keeping software up to date. Because of this, we only test this plugin on the latest stable version of WordPress and will only guarantee it works in the latest version.
 
 = Will this plugin completely stop all attacks on my site? =
-* No. Solid Security is designed to help improve the security of your WordPress installation from many common attack methods, but it cannot prevent every possible attack. Nothing replaces diligence and good practice. This plugin makes it a little easier for you to apply both.
+* No. Kadence Security is designed to help improve the security of your WordPress installation from many common attack methods, but it cannot prevent every possible attack. Nothing replaces diligence and good practice. This plugin makes it a little easier for you to apply both.
 
 = Is this plugin only for new WordPress installs or can I use it on existing sites, too? =
-* While Solid Security can be installed on either a new or existing site, we strongly recommend making a [complete backup](https://go.solidwp.com/security-basic-solid-backups) of your existing site before applying any features included in this plugin.
+* While Kadence Security can be installed on either a new or existing site, we strongly recommend making a [complete backup](https://go.solidwp.com/security-basic-solid-backups) of your existing site before applying any features included in this plugin.
 
 = Will this plugin work on all servers and hosts? =
-* Solid Security requires Apache or LiteSpeed and mod_rewrite or NGINX to work.
+* Kadence Security requires Apache or LiteSpeed and mod_rewrite or NGINX to work.
 
 = What changes does this plugin make that can break my site? =
-* Solid Security makes significant changes to your database and other site files which can be problematic for existing WordPress sites. Again, we strongly recommended making a complete backup of your site before using this plugin. While problems are rare, most support requests involve the failure to make a proper backup before installation. DISCLAIMER: Under no circumstances do we release this plugin with any warranty, implied or otherwise. We cannot be held responsible for any damage that might arise from the use of this plugin.
+* Kadence Security makes significant changes to your database and other site files which can be problematic for existing WordPress sites. Again, we strongly recommended making a complete backup of your site before using this plugin. While problems are rare, most support requests involve the failure to make a proper backup before installation. DISCLAIMER: Under no circumstances do we release this plugin with any warranty, implied or otherwise. We cannot be held responsible for any damage that might arise from the use of this plugin.
 
 == Screenshots ==
 
@@ -186,6 +184,10 @@ Manage more than one WordPress site? Release lockouts and keep your themes, plug
 8. Automated vulnerability patching with Patchstack (Pro)
 
 == Changelog ==
+
+= 10.0.0 =
+* Tweak: Updated branding from SolidWP to Kadence.
+* New: QR code for 2FA is generated locally by default (the GD PHP extension is required), with a Kadence Security-hosted solution as a fallback.
 
 = 9.4.7 =
 * Bug Fix: Prevent email retry loops by ensuring the scheduled notification properties are saved.

@@ -12,7 +12,7 @@ import { withSelect, withDispatch } from '@wordpress/data';
 import { createInterpolateElement } from '@wordpress/element';
 
 /**
- * SolidWP Dependencies
+ * Kadence Dependencies
  */
 import {
 	Button,
@@ -77,7 +77,7 @@ function CardUnknown( { card, removing, canRemove, remove } ) {
 					<Text
 						as="p"
 						text={ __(
-							'Something went wrong with this card. This is most likely due to disabling a Solid Security Module.',
+							'Something went wrong with this card. This is most likely due to disabling a Kadence Security Module.',
 							'better-wp-security'
 						) }
 						align="center"

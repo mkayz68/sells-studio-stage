@@ -9,7 +9,7 @@ import styled from '@emotion/styled';
 import { __ } from '@wordpress/i18n';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Surface, SurfaceVariant, Text, TextSize, TextVariant, TextWeight } from '@ithemes/ui';
 
@@ -34,9 +34,9 @@ const StyledProSiteTag = styled( Surface )`
 
 	background-image: linear-gradient(
 		116deg,
-		#3c3454 0%,
-		#44375a 36%,
-		#66457b 100%
+		#1145c9 0%,
+		#1145c9 36%,
+		#1145c9 100%
 	);
 
 	border-radius: 5px;

@@ -25,7 +25,7 @@ export function ActiveUpdatesBadge() {
 
 	const icon = updateVulnerabilities
 		? <StyledCheck icon={ checkIcon } />
-		: <StyledClose icon={ closeIcon } style={ { fill: '#8A2424' } } />;
+		: <StyledClose icon={ closeIcon } style={ { fill: '#D12502' } } />;
 
 	return (
 		<Badge
@@ -55,13 +55,13 @@ export function VirtualPatchingBadge() {
 
 	const icon = hasPatchstack
 		? shield
-		: <StyledClose icon={ closeIcon } style={ { fill: '#8A2424' } } />;
+		: <StyledClose icon={ closeIcon } style={ { fill: '#D12502' } } />;
 
 	return (
 		<Badge
 			text={ text }
 			icon={ icon }
-			iconColor="#6817C5"
+			iconColor="#1145C9"
 			tooltip={ tooltip }
 		/>
 	);

@@ -41,7 +41,7 @@ final class Login_Security_Question_Pack implements Questions_Provider {
 			}
 
 			public function get_description(): string {
-				return __( 'The built-in Solid Security firewall stops automated password-guessing attacks by temporarily blocking them when you enable Local Brute Force. Layer in additional protection by enabling Network Brute Force. Join with other SolidWP-protected sites, combining intelligence to combat sophisticated attackers.', 'better-wp-security' );
+				return __( 'The built-in Kadence Security firewall stops automated password-guessing attacks by temporarily blocking them when you enable Local Brute Force. Layer in additional protection by enabling Network Brute Force. Join with other Kadence-protected sites, combining intelligence to combat sophisticated attackers.', 'better-wp-security' );
 			}
 
 			public function respond( Answer_Handler $handler ) {

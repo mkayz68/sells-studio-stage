@@ -57,7 +57,7 @@ body {
 	text-decoration: none;
 	display: inline-block;
 	padding: 0.5rem 0.75rem;
-	background: #6817C5;
+	background: #1145C9;
 	color: #ffff;
 	border-radius: 2px;
 	border: solid 2px transparent;
@@ -66,15 +66,15 @@ body {
 }
 
 #lockout_screen .btn:hover {
-	background: #53129e;
+	background: #0e38a3;
 	color: #fff;
 	border-color: transparent;
 }
 
 #lockout_screen .secondary-btn {
-	border: solid 2px #6817c5;
+	border: solid 2px #1145c9;
 	background: transparent;
-	color: #6817c5;
+	color: #1145c9;
 }
 
 .lockout-container-secondary {
@@ -106,6 +106,6 @@ body {
 	.lockout-container-secondary {
 		display: block;
 		width: 25%;
-		background: #F3EDFA;
+		background: #E9EFFC;
 	}
 }

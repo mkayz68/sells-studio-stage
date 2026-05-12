@@ -10,7 +10,7 @@ import { Flex, ToggleControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Badge, Surface } from '@ithemes/ui';
 

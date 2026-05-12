@@ -25,7 +25,7 @@ require_once( __DIR__ . '/lib/lockout/abstract-context.php' );
  * Class ITSEC_Lockout
  *
  * The ITSEC Lockout class is the centralized controller for detecting and blocking already locked-out users. Other
- * Solid Security modules instruct ITSEC_Lockout to save a lock out to storage, but ITSEC Lockout will never lock
+ * Kadence Security modules instruct ITSEC_Lockout to save a lock out to storage, but ITSEC Lockout will never lock
  * out a user itself.
  *
  * If a user attempts to login with valid credentials and their user ID is marked as locked out, they will be prevented
@@ -62,7 +62,7 @@ require_once( __DIR__ . '/lib/lockout/abstract-context.php' );
  *
  * After the lockout has been stored, the request will be immediately exited.
  *
- * Solid Security supports two types of whitelists. Temporary and permanent whitelists. Permanent whitelists are
+ * Kadence Security supports two types of whitelists. Temporary and permanent whitelists. Permanent whitelists are
  * configured in the Global Settings module and will permanently prevent a user with that IP from being locked out.
  * The temporary whitelist is a global list of admin level user's IP addresses. Whenever an admin user is logged-in and
  * using the site, their IP will be added to the whitelist for 24 hours.
@@ -135,7 +135,7 @@ final class ITSEC_Lockout {
 	/**
 	 * On every page load, check if the current host is locked out.
 	 *
-	 * When a host becomes locked out, Solid Security performs a quick ban. This will cause an IP block to be
+	 * When a host becomes locked out, Kadence Security performs a quick ban. This will cause an IP block to be
 	 * written to the site's server configuration file. This ip block might not immediately take effect, particularly
 	 * on Nginx systems. So on every page load we check that if the current host is locked out or not.
 	 */
@@ -785,7 +785,7 @@ final class ITSEC_Lockout {
 			$message = ITSEC_Modules::get_setting( 'global', 'community_lockout_message' );
 
 			if ( ! $message ) {
-				$message = __( 'Your IP address has been flagged as a threat by the Solid Security network.', 'better-wp-security' );
+				$message = __( 'Your IP address has been flagged as a threat by the Kadence Security network.', 'better-wp-security' );
 			}
 		} elseif ( $context instanceof Execute_Lock\User_Context || $context instanceof Execute_Lock\Username_Context ) {
 

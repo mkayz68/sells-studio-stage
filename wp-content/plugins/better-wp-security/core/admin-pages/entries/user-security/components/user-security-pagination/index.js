@@ -10,7 +10,7 @@ import { chevronLeftSmall, chevronRightSmall } from '@wordpress/icons';
 import { useDispatch, useSelect } from '@wordpress/data';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Button } from '@ithemes/ui';
 

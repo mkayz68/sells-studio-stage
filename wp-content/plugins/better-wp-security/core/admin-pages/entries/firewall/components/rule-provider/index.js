@@ -2,6 +2,7 @@
  * WordPress dependencies
  */
 import { __ } from '@wordpress/i18n';
+import { applyFilters } from '@wordpress/hooks';
 
 /**
  * Solid dependencies
@@ -20,6 +21,8 @@ export default function Provider( { provider } ) {
 }
 
 function forProvider( provider ) {
+	const showLogo = applyFilters( 'kadenceSecurity.showLogo', true );
+
 	switch ( provider ) {
 		case 'patchstack':
 			return {
@@ -28,8 +31,8 @@ function forProvider( provider ) {
 			};
 		case 'solid':
 			return {
-				text: 'Solid Security',
-				icon: <MarkPro />,
+				text: __( 'Kadence Security', 'better-wp-security' ),
+				icon: showLogo ? <MarkPro /> : null,
 			};
 		default:
 			return {

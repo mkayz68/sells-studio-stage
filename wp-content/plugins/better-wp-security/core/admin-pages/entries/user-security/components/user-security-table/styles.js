@@ -9,7 +9,7 @@ import styled from '@emotion/styled';
 import { Dropdown, Icon } from '@wordpress/components';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { Surface, Heading, Text, Button } from '@ithemes/ui';
 

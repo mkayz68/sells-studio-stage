@@ -1,0 +1,119 @@
+2026-05-11T15:46:01+02:00 DEBUG Mail action ***wp_mail_failed*** triggered. Callback function :: ***ur_email_send_failed_handler()***
+2026-05-11T15:46:01+02:00 ERROR Mail send failed. Details:
+{
+    "reason": "Impossible d\u2018instancier la fonction mail.",
+    "to": [
+        "burdloffkevin@gmail.com"
+    ],
+    "subject": "User Registration & Membership: Test email from Sells Studio",
+    "headers": [],
+    "attachments": []
+}
+2026-05-12T15:09:51+02:00 NOTICE =============== Email Sending Start ================
+2026-05-12T15:09:51+02:00 DEBUG Email details:
+{
+    "to": "3aecyd6r7@mozmail.com",
+    "subject": "Confirmez votre adresse \u00e9lectronique",
+    "template_id": null
+}
+2026-05-12T15:09:53+02:00 DEBUG Mail action ***wp_mail_failed*** triggered. Callback function :: ***ur_email_send_failed_handler()***
+2026-05-12T15:09:53+02:00 ERROR Mail send failed. Details:
+{
+    "reason": "Impossible d\u2018instancier la fonction mail.",
+    "to": [
+        "3aecyd6r7@mozmail.com"
+    ],
+    "subject": "Confirmez votre adresse \u00e9lectronique",
+    "headers": [],
+    "attachments": [
+        ""
+    ]
+}
+2026-05-12T15:09:53+02:00 ERROR wp_mail() a retourné false. L'email n'a pas pu être envoyé.
+2026-05-12T15:09:53+02:00 NOTICE =============== Email Sending Start ================
+2026-05-12T15:09:53+02:00 DEBUG Email details:
+{
+    "to": "burdloffkevin@gmail.com",
+    "subject": "Inscription d'un membre : {{nom d'utilisateur}}",
+    "template_id": null
+}
+2026-05-12T15:09:55+02:00 DEBUG Mail action ***wp_mail_failed*** triggered. Callback function :: ***ur_email_send_failed_handler()***
+2026-05-12T15:09:55+02:00 ERROR Mail send failed. Details:
+{
+    "reason": "Impossible d\u2018instancier la fonction mail.",
+    "to": [
+        "burdloffkevin@gmail.com"
+    ],
+    "subject": "Inscription d'un membre : {{nom d'utilisateur}}",
+    "headers": [],
+    "attachments": [
+        ""
+    ]
+}
+2026-05-12T15:09:55+02:00 ERROR wp_mail() a retourné false. L'email n'a pas pu être envoyé.
+2026-05-12T15:12:21+02:00 NOTICE =============== Email Sending Start ================
+2026-05-12T15:12:21+02:00 DEBUG Email details:
+{
+    "to": "3aecyd6r7@mozmail.com",
+    "subject": "Bienvenue sur Sells Studio !",
+    "template_id": null
+}
+2026-05-12T15:12:23+02:00 DEBUG Mail action ***wp_mail_failed*** triggered. Callback function :: ***ur_email_send_failed_handler()***
+2026-05-12T15:12:23+02:00 ERROR Mail send failed. Details:
+{
+    "reason": "Impossible d\u2018instancier la fonction mail.",
+    "to": [
+        "3aecyd6r7@mozmail.com"
+    ],
+    "subject": "Bienvenue sur Sells Studio !",
+    "headers": [],
+    "attachments": []
+}
+2026-05-12T15:12:23+02:00 ERROR wp_mail() a retourné false. L'email n'a pas pu être envoyé.
+2026-05-12T15:19:45+02:00 DEBUG Mail action ***wp_mail_failed*** triggered. Callback function :: ***ur_email_send_failed_handler()***
+2026-05-12T15:19:45+02:00 ERROR Mail send failed. Details:
+{
+    "reason": "unauthorized: Key not found",
+    "to": [
+        "sellsstudio@d4411f13.slmailhost.com"
+    ],
+    "subject": "WP Mail SMTP Automatic Email Test",
+    "headers": {
+        "X-Mailer-Type": "WPMailSMTP\/Admin\/SetupWizard\/Test"
+    },
+    "attachments": []
+}
+2026-05-12T15:19:51+02:00 DEBUG Mail action ***wp_mail_failed*** triggered. Callback function :: ***ur_email_send_failed_handler()***
+2026-05-12T15:19:51+02:00 ERROR Mail send failed. Details:
+{
+    "reason": "unauthorized: Key not found",
+    "to": [
+        "burdloffkevin@gmail.com"
+    ],
+    "subject": "WP Mail SMTP: HTML Test email to burdloffkevin@gmail.com",
+    "headers": {
+        "X-Mailer-Type": "WPMailSMTP\/Admin\/Test"
+    },
+    "attachments": []
+}
+2026-05-12T15:22:57+02:00 DEBUG Mail action ***wp_mail_failed*** triggered. Callback function :: ***ur_email_send_failed_handler()***
+2026-05-12T15:22:57+02:00 ERROR Mail send failed. Details:
+{
+    "reason": "unauthorized: Key not found",
+    "to": [
+        "burdloffkevin@gmail.com"
+    ],
+    "subject": "WP Mail SMTP: HTML Test email to burdloffkevin@gmail.com",
+    "headers": {
+        "X-Mailer-Type": "WPMailSMTP\/Admin\/Test"
+    },
+    "attachments": []
+}
+2026-05-12T15:36:40+02:00 NOTICE =============== Email Sending Start ================
+2026-05-12T15:36:40+02:00 DEBUG Email details:
+{
+    "to": "3aecyd6r7@mozmail.com",
+    "subject": "Demande de r\u00e9initialisation du mot de passe",
+    "template_id": null
+}
+2026-05-12T15:36:41+02:00 SUCCESS =============== Email send request completed successfully ===============

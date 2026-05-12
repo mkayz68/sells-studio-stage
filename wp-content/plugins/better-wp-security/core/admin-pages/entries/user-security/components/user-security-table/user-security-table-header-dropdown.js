@@ -10,7 +10,7 @@ import {
 } from '@wordpress/icons';
 
 /**
- * SolidWP dependencies
+ * Kadence dependencies
  */
 import { TextSize, TextVariant } from '@ithemes/ui';
 

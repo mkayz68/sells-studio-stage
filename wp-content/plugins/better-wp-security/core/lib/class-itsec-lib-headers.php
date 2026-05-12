@@ -5,7 +5,7 @@ use iThemesSecurity\Headers\ITSEC_Headers_Sanitizer;
 /**
  * Class ITSEC_Lib_Headers
  *
- * Manages HTTP headers for the Solid Security plugin.
+ * Manages HTTP headers for the Kadence Security plugin.
  * Headers can be sent via PHP using or written to server configuration files.
  * To add headers, use `itsec_lib_php_headers` and `itsec_lib_server_config_headers` filters.
  */
