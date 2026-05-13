@@ -163,25 +163,59 @@ class ITSEC_Lib_File {
 			if ( in_array( 'fopen', $callable ) ) {
 				if ( $append ) {
 					$mode = 'ab';
+
+					if ( false !== ( $fh = @fopen( $file, $mode ) ) ) {
+						flock( $fh, LOCK_EX );
+
+						mbstring_binary_safe_encoding();
+
+						$data_length   = strlen( $contents );
+						$bytes_written = @fwrite( $fh, $contents );
+
+						reset_mbstring_encoding();
+
+						@flock( $fh, LOCK_UN );
+						@fclose( $fh );
+
+						if ( $data_length === $bytes_written ) {
+							$success = true;
+						}
+					}
 				} else {
-					$mode = 'wb';
-				}
+					/* 
+					 Atomic-write section
+					*/
+					$tmp = @tempnam( dirname( $file ), '.itsec' );
 
-				if ( false !== ( $fh = @fopen( $file, $mode ) ) ) {
-					flock( $fh, LOCK_EX );
+					if ( false !== $tmp && false !== ( $fh = @fopen( $tmp, 'wb' ) ) ) {
+						mbstring_binary_safe_encoding();
 
-					mbstring_binary_safe_encoding();
+						$data_length   = strlen( $contents );
+						$bytes_written = @fwrite( $fh, $contents );
 
-					$data_length = strlen( $contents );
-					$bytes_written = @fwrite( $fh, $contents );
+						reset_mbstring_encoding();
 
-					reset_mbstring_encoding();
+						@fclose( $fh );
 
-					@flock( $fh, LOCK_UN );
-					@fclose( $fh );
+						if ( $data_length === $bytes_written ) {
+							if ( $file_existed ) {
+								$original_perms = fileperms( $file );
 
-					if ( $data_length === $bytes_written ) {
-						$success = true;
+								if ( false !== $original_perms ) {
+									@chmod( $tmp, $original_perms & 0777 );
+								}
+							}
+
+							if ( @rename( $tmp, $file ) ) {
+								$success = true;
+							}
+						}
+
+						if ( ! $success && file_exists( $tmp ) ) {
+							@unlink( $tmp );
+						}
+					} elseif ( false !== $tmp ) {
+						@unlink( $tmp );
 					}
 				}
 			}

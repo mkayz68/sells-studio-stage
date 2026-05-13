@@ -1195,6 +1195,7 @@ color: #ec2758;}.agencyb-contact-1-icon
 .tabs-contents-6112-tab {
 }
 .formation-card {
+ color:#33333;
 }
 @media (max-width: 1120px) {
 .formation-card {
@@ -1223,6 +1224,7 @@ display:flex;
 }
 
 .contact-button {
+ border-radius:10px;
 }
 @media (max-width: 1120px) {
 .contact-button {

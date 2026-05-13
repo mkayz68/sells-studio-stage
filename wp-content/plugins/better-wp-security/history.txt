@@ -1139,3 +1139,5 @@
 10.0.0 - 2026-05-11 - Nexcess
 	Tweak: Updated branding from SolidWP to Kadence.
 	New: QR code for 2FA is generated locally by default (the GD PHP extension is required), with a Kadence Security-hosted solution as a fallback.
+10.0.1 - 2026-05-12 - Nexcess
+    Bug Fix: Race condition in file write could empty wp-config.php/.htaccess files.

@@ -193,10 +193,16 @@ add_action('wp_footer', function() { ?>
 </script>
 <?php }); 
 
+/**
+ * Filtre pour les articles de blog, afin de gérer les "extraits"
+ */
 add_filter('excerpt_length', function($length) {
     return 20; // nombre de mots affiché dans les paragraphe de "résumé" d'article (excerpt)
 });
 
+/**
+ * Filtre pour la navbar afin d'afficher et de cacher les éléments non nécéssaire.
+ */
 add_filter('wp_nav_menu_objects', function($items, $args) {
     foreach ($items as $key => $item) {
         // Cache "Mon Profil" si non connecté
@@ -213,3 +219,22 @@ add_filter('wp_nav_menu_objects', function($items, $args) {
     }
     return $items;
 }, 10, 2);
+
+/**
+ * Parce que j'ai construit un menu à la main sur Oxygen
+ * Petit JS pour activer la classe "active" sur le bon lien quand on est sur la bonne formation.
+ */
+add_action('wp_footer', function() { ?>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // dans l'ordre des ids : div Publicité assisté par ordinateur, div Montage vidéo, div Site web & E-commerce, div Langues, div Sécurité et incendie
+    const liens = document.querySelectorAll('#div_block-162-123 a, #div_block-76-209 a, #div_block-253-125 a, #div_block-269-127 a, #div_block-170-129 a');
+    
+    liens.forEach(lien => {
+        if (lien.href === window.location.href) {
+            lien.classList.add('active');
+        }
+    });
+});
+</script>
+<?php });
