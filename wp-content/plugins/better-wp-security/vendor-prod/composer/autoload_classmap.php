@@ -228,7 +228,7 @@ return array(
     'Two_Factor_Email' => $baseDir . '/core/modules/two-factor/providers/class.two-factor-email.php',
     'Two_Factor_Provider' => $baseDir . '/core/modules/two-factor/providers/class.two-factor-provider.php',
     'Two_Factor_Totp' => $baseDir . '/core/modules/two-factor/providers/class.two-factor-totp.php',
-    'Your\\Namespace\\Container' => $vendorDir . '/stellarwp/container-contract/examples/php-di/Container.php',
+    'Your\\Namespace\\Container' => $vendorDir . '/stellarwp/container-contract/examples/di52/Container.php',
     'iThemesSecurity\\Actor\\Actor' => $baseDir . '/core/lib/actor/Actor.php',
     'iThemesSecurity\\Actor\\Actor_Factory' => $baseDir . '/core/lib/actor/Actor_Factory.php',
     'iThemesSecurity\\Actor\\Import' => $baseDir . '/core/lib/actor/Import.php',

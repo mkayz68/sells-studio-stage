@@ -4,8 +4,8 @@ Donate link: https://mediasyncplugin.com/?utm_source=readme&utm_medium=base_plug
 Tags: media, uploads, import, ftp, server
 Requires at least: 5.3
 Tested up to: 7.0
-Requires PHP: 7.1
-Stable tag: 1.5.1
+Requires PHP: 7.4
+Stable tag: 1.5.2
 License: GPLv2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,6 +77,9 @@ Please first try to turn on debugging in Settings -> Media Sync and check [Netwo
 
 
 == Changelog ==
+
+= 1.5.2 =
+* When importing images or PDFs, use embedded metadata title (PDF info dictionary, XMP, or EXIF) instead of the filename.
 
 = 1.5.1 =
 * Fix file name corruption on Windows caused by `realpath()` returning OS-native paths. Path validation now preserves the original file path after security checks pass.
@@ -256,7 +259,7 @@ But there are options to choose before importing and also a possibility to overw
 Fix file name corruption on Windows caused by 1.5.0 security update.
 
 = 1.5.0 =
-Security update: Fix path traversal vulnerability (CVE-2026-6670) in `sub_dir` and `media_items` parameters. File paths are now validated with `realpath()` and restricted to the "uploads" directory. Stream wrappers (e.g. `ftp://`, `php://`) are rejected. Reported by Drew Webber (mcdruid) via Wordfence.
+Security update: Fix path traversal vulnerability (CVE-2026-6670). File paths are now validated with realpath() and restricted to the uploads directory. Stream wrappers are rejected. Reported by Drew Webber (mcdruid) via Wordfence.
 
 = 0.1.0 =
 Initial plugin features

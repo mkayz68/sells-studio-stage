@@ -353,6 +353,11 @@ class ITSEC_Lib_Login_Interstitial {
 		}
 
 		$session = ITSEC_Login_Interstitial_Session::create( $user, $slug );
+
+		if ( is_wp_error( $session ) ) {
+			wp_die( $session );
+		}
+
 		$session->initialize_from_global_state();
 		$session->add_show_after( $slug );
 		$session->save();

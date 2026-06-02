@@ -117,3 +117,16 @@
     "template_id": null
 }
 2026-05-12T15:36:41+02:00 SUCCESS =============== Email send request completed successfully ===============
+2026-05-28T17:18:00+02:00 DEBUG Mail action ***wp_mail_failed*** triggered. Callback function :: ***ur_email_send_failed_handler()***
+2026-05-28T17:18:00+02:00 ERROR Mail send failed. Details:
+{
+    "reason": "SMTP Error: data not accepted.",
+    "to": [
+        "burdloffkevin@gmail.com"
+    ],
+    "subject": "Sells Studio \"azdddazd\"",
+    "headers": {
+        "X-WPCF7-Content-Type": "text\/html"
+    },
+    "attachments": []
+}

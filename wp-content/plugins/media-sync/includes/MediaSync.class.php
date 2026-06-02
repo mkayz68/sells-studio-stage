@@ -753,41 +753,178 @@ if ( !class_exists( 'MediaSync' ) ) :
          * @param string $post_date_type How to generate post date
          * @return array
          */
-        static public function media_sync_prepare_attachment_data($absolute_path, $relative_path, $post_date_type)
-        {
+        static public function media_sync_prepare_attachment_data($absolute_path, $relative_path, $post_date_type) {
             try {
-                $mime_type = self::media_sync_get_mime_type($absolute_path);
+                $mime_type = self::media_sync_get_mime_type( $absolute_path );
 
-                if (isset($mime_type['error']) || isset($mime_type['errorMessage'])) {
+                if ( isset( $mime_type['error'] ) || isset( $mime_type['errorMessage'] ) ) {
                     return $mime_type;
                 }
 
-                $decoded_relative_path = urldecode($relative_path);
+                $decoded_relative_path = urldecode( $relative_path );
+
+                $title = self::media_sync_get_file_title( $absolute_path, $mime_type );
 
                 // Prepare an array of post data for the attachment.
                 $attachment = array(
                     'guid'           => get_site_url() . $decoded_relative_path,
                     'post_mime_type' => $mime_type,
-                    'post_title'     => preg_replace( '/\.[^.]+$/', '', basename( $decoded_relative_path ) ),
+                    'post_title'     => $title ?: preg_replace( '/\.[^.]+$/', '', basename( $decoded_relative_path ) ),
                     'post_content'   => '',
                     'post_status'    => 'inherit'
                 );
 
                 // Try to get post date based on settings - "Default" option will not set anything, so WP can use defaults
-                $post_date = self::media_sync_post_date($absolute_path, $post_date_type);
+                $post_date = self::media_sync_post_date( $absolute_path, $post_date_type );
 
-                if(!empty($post_date)) {
-                    $attachment['post_date'] = $post_date;
+                if ( ! empty( $post_date ) ) {
+                    $attachment['post_date']     = $post_date;
                     $attachment['post_date_gmt'] = $post_date;
                 }
 
                 return $attachment;
-            } catch (Exception $e) {
+            } catch ( Exception $e ) {
                 return array(
-                    'errorMessage' => sprintf(__('Error preparing attachment data for file: %s.', 'media-sync'), $absolute_path),
-                    'error' => $e->getMessage()
+                    'errorMessage' => sprintf( __( 'Error preparing attachment data for file: %s.', 'media-sync' ), $absolute_path ),
+                    'error'        => $e->getMessage()
                 );
             }
+        }
+
+
+        /**
+         * Try to extract an embedded title from a file's metadata.
+         * Returns null if no title is found, so the caller can fall back to the filename.
+         *
+         * @since 1.5.2
+         * @param string $absolute_path Absolute path to the file
+         * @param string $mime_type MIME type of the file
+         * @return string|null
+         */
+        static private function media_sync_get_file_title($absolute_path, $mime_type) {
+            try {
+                $is_image = strpos( $mime_type, 'image/' ) === 0;
+                if ( $is_image ) {
+                    return self::media_sync_get_image_title( $absolute_path );
+                }
+                if ( $mime_type === 'application/pdf' ) {
+                    return self::media_sync_get_pdf_title( $absolute_path );
+                }
+            } catch ( Exception $e ) {
+            }
+
+            return null;
+        }
+
+
+        /**
+         * Extract title from image EXIF metadata.
+         * Checks XPTitle (Windows, UTF-16LE) then ImageDescription.
+         *
+         * @since 1.5.2
+         * @param string $path Absolute path to the image file
+         * @return string|null
+         */
+        static private function media_sync_get_image_title($path) {
+            $exif_available = function_exists( 'exif_read_data' );
+            if ( ! $exif_available ) {
+                return null;
+            }
+
+            $exif          = @exif_read_data( $path );
+            $exif_is_valid = is_array( $exif );
+            if ( ! $exif_is_valid ) {
+                return null;
+            }
+
+            $xp_title = ! empty( $exif['XPTitle'] ) ? $exif['XPTitle'] : null;
+            if ( $xp_title !== null ) {
+                $title = trim( mb_convert_encoding( $xp_title, 'UTF-8', 'UTF-16LE' ) );
+                if ( ! empty( $title ) ) {
+                    return $title;
+                }
+            }
+
+            $image_description = ! empty( $exif['ImageDescription'] ) ? trim( $exif['ImageDescription'] ) : null;
+            if ( ! empty( $image_description ) ) {
+                return $image_description;
+            }
+
+            return null;
+        }
+
+
+        /**
+         * Extract title from PDF XMP metadata or info dictionary.
+         * Reads the first 128KB. XMP is tried first as it is more reliably near the start of the file.
+         *
+         * @since 1.5.2
+         * @param string $path Absolute path to the PDF file
+         * @return string|null
+         */
+        static private function media_sync_get_pdf_title($path) {
+            $content          = @file_get_contents( $path, false, null, 0, 131072 );
+            $content_is_empty = $content === false || $content === '';
+            if ( $content_is_empty ) {
+                return null;
+            }
+
+            // XMP metadata stream: <dc:title> block (checked first more reliably near start of file)
+            $has_xmp = preg_match( '/<dc:title>.*?<rdf:li[^>]*>([^<]+)<\/rdf:li>.*?<\/dc:title>/s', $content, $xmp_matches );
+            if ( $has_xmp ) {
+                $title = trim( html_entity_decode( $xmp_matches[1], ENT_XML1 | ENT_QUOTES, 'UTF-8' ) );
+                if ( ! empty( $title ) ) {
+                    return $title;
+                }
+            }
+
+            // Info dictionary literal string: /Title (value)
+            $has_literal = preg_match( '/\/Title\s*\(([^)\\\\]*(?:\\\\.[^)\\\\]*)*)\)/', $content, $literal_matches );
+            if ( $has_literal ) {
+                $raw           = $literal_matches[1];
+                $raw           = preg_replace_callback( '/\\\\([nrtbf()\\\\]|[0-7]{1,3})/', function ( $escape_match ) {
+                    $char = $escape_match[1];
+                    $map  = [
+                        'n'  => "\n",
+                        'r'  => "\r",
+                        't'  => "\t",
+                        'b'  => "\x08",
+                        'f'  => "\x0C",
+                        '('  => '(',
+                        ')'  => ')',
+                        '\\' => '\\'
+                    ];
+
+                    return isset( $map[ $char ] ) ? $map[ $char ] : chr( octdec( $char ) );
+                }, $raw );
+                $has_utf16_bom = strlen( $raw ) >= 2 && "\xFE\xFF" === substr( $raw, 0, 2 );
+                if ( $has_utf16_bom ) {
+                    $raw = mb_convert_encoding( substr( $raw, 2 ), 'UTF-8', 'UTF-16BE' );
+                }
+                $title = trim( $raw );
+                if ( ! empty( $title ) ) {
+                    return $title;
+                }
+            }
+
+            // Info dictionary hex string: /Title <hex>
+            $has_hex = preg_match( '/\/Title\s*<([0-9a-fA-F\s]+)>/', $content, $hex_matches );
+            if ( $has_hex ) {
+                $hex = preg_replace( '/\s/', '', $hex_matches[1] );
+                $raw = @hex2bin( $hex );
+                if ( $raw ) {
+                    $has_utf16_bom = strlen( $raw ) >= 2 && "\xFE\xFF" === substr( $raw, 0, 2 );
+                    if ( $has_utf16_bom ) {
+                        $raw = mb_convert_encoding( substr( $raw, 2 ), 'UTF-8', 'UTF-16BE' );
+                    }
+                    $title = trim( $raw );
+                    if ( ! empty( $title ) ) {
+                        return $title;
+                    }
+                }
+            }
+
+            return null;
         }
 
 

@@ -11,11 +11,11 @@ class ComposerStaticInit21d5536de7b0f1825cc8669e43c80018
     );
 
     public static $prefixLengthsPsr4 = array (
-        'Z' => 
+        'Z' =>
         array (
             'ZxcvbnPhp\\' => 10,
         ),
-        'S' => 
+        'S' =>
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'StellarWP\\Telemetry\\Views_Dir\\' => 30,
@@ -23,7 +23,7 @@ class ComposerStaticInit21d5536de7b0f1825cc8669e43c80018
             'StellarWP\\Telemetry\\' => 20,
             'StellarWP\\ContainerContract\\' => 28,
         ),
-        'P' => 
+        'P' =>
         array (
             'Psr\\Container\\' => 14,
             'Patchstack\\' => 11,
@@ -31,44 +31,44 @@ class ComposerStaticInit21d5536de7b0f1825cc8669e43c80018
     );
 
     public static $prefixDirsPsr4 = array (
-        'ZxcvbnPhp\\' => 
+        'ZxcvbnPhp\\' =>
         array (
             0 => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src',
         ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
+        'Symfony\\Polyfill\\Mbstring\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'StellarWP\\Telemetry\\Views_Dir\\' => 
+        'StellarWP\\Telemetry\\Views_Dir\\' =>
         array (
             0 => __DIR__ . '/..' . '/stellarwp/telemetry/src/views',
         ),
-        'StellarWP\\Telemetry\\Assets_Dir\\' => 
+        'StellarWP\\Telemetry\\Assets_Dir\\' =>
         array (
             0 => __DIR__ . '/..' . '/stellarwp/telemetry/src/resources',
         ),
-        'StellarWP\\Telemetry\\' => 
+        'StellarWP\\Telemetry\\' =>
         array (
             0 => __DIR__ . '/..' . '/stellarwp/telemetry/src/Telemetry',
         ),
-        'StellarWP\\ContainerContract\\' => 
+        'StellarWP\\ContainerContract\\' =>
         array (
             0 => __DIR__ . '/..' . '/stellarwp/container-contract/src',
         ),
-        'Psr\\Container\\' => 
+        'Psr\\Container\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Patchstack\\' => 
+        'Patchstack\\' =>
         array (
             0 => __DIR__ . '/..' . '/patchstack/firewall/src',
         ),
     );
 
     public static $prefixesPsr0 = array (
-        'P' => 
+        'P' =>
         array (
-            'Pimple' => 
+            'Pimple' =>
             array (
                 0 => __DIR__ . '/..' . '/pimple/pimple/src',
             ),
@@ -298,7 +298,7 @@ class ComposerStaticInit21d5536de7b0f1825cc8669e43c80018
         'Two_Factor_Email' => __DIR__ . '/../..' . '/core/modules/two-factor/providers/class.two-factor-email.php',
         'Two_Factor_Provider' => __DIR__ . '/../..' . '/core/modules/two-factor/providers/class.two-factor-provider.php',
         'Two_Factor_Totp' => __DIR__ . '/../..' . '/core/modules/two-factor/providers/class.two-factor-totp.php',
-        'Your\\Namespace\\Container' => __DIR__ . '/..' . '/stellarwp/container-contract/examples/php-di/Container.php',
+        'Your\\Namespace\\Container' => __DIR__ . '/..' . '/stellarwp/container-contract/examples/di52/Container.php',
         'iThemesSecurity\\Actor\\Actor' => __DIR__ . '/../..' . '/core/lib/actor/Actor.php',
         'iThemesSecurity\\Actor\\Actor_Factory' => __DIR__ . '/../..' . '/core/lib/actor/Actor_Factory.php',
         'iThemesSecurity\\Actor\\Import' => __DIR__ . '/../..' . '/core/lib/actor/Import.php',
