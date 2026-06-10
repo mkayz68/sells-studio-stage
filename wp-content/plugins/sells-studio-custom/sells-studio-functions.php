@@ -58,7 +58,8 @@ add_shortcode('nombre_projets', function() {
  * vérifie la base de donnée si un projet a été réalisé pour un client
  * ET si le client est un nouveau client afin d'avoir un calcul juste.
  * 
- * On passe par les champs du plugin ACF(Advanced Custom Field) qui apparaissent une fois avoir coché la catégorie "projet" lorsque l'on publie un article.
+ * On passe par les champs du plugin ACF(Advanced Custom Field) qui apparaissent 
+ * une fois avoir coché la catégorie "projet" lorsque l'on publie un article.
  * @return integer le nombre de client
  *******************************************************************************/
 add_shortcode('nombre_clients', function() {
@@ -92,7 +93,7 @@ add_shortcode('annees_experience', function() {
 
 /** *****************************************************************************
  * Permet de renvoyer l'année courante
- * Sers à changer automatiquement la date dans du copyright dans le footer.
+ * Sers à changer automatiquement la date du copyright dans le footer.
  * @return integer l'année
  *******************************************************************************/
 add_shortcode('annee_courante', function() {

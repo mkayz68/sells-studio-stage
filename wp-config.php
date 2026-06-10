@@ -29,15 +29,18 @@ define( 'ITSEC_ENCRYPTION_KEY', 'S31CRkRuMEFtcnckLE9iX0p4KlF8IXc8aypwWVBENHhSWXI
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'sells_studio' );
+// define( 'DB_NAME', 'ex2f45_sells_studio' );
 
 /** Database username */
 define( 'DB_USER', 'root' );
+// define( 'DB_USER', 'ex2f45_k_burdlof' );
 
 /** Database password */
 define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
+// define( 'DB_HOST', 'ex2f45.myd.infomaniak.com' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );

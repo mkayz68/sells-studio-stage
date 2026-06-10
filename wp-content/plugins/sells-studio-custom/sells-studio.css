@@ -42,9 +42,9 @@ iframe {
     color: white !important;
 }
 
-/* Change la background color du footer pour avoir un petit gradient */
+/* Footer color */
 #section-9-11 {
-    background: linear-gradient(360deg, #00122d 0%, #001f4d 100%);
+    background: linear-gradient(360deg, #f3f3f3 0%, #ffffff 100%);
 }
 
 .oxy-read-more {
