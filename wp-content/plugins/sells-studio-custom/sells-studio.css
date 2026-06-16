@@ -1,0 +1,109 @@
+.custom-form {
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    width: 450px;
+    padding: 6px 8px;
+}
+
+.custom-textarea {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    width: 450px;
+    resize: none;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+.custom-submit {
+    margin-top: 5px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #EC2758;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    border: none;
+    padding: 0 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.custom-submit:hover {
+    transform: scale(1.05);
+}
+
+/* Applique la couleur blanche au texte du footer*/
+.agencyb-footer-1-title {
+    color: white !important;
+}
+
+/* Footer color */
+#section-9-11 {
+    background: linear-gradient(360deg, #f3f3f3 0%, #ffffff 100%);
+}
+
+.oxy-read-more {
+    border-radius: 10px !important;
+}
+
+/* Cache les flèches des input number sur tous les navigateurs */
+#n_siret::-webkit-outer-spin-button,
+#n_siret::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#n_siret {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+/* Change la couleur du bloc actif dans les liens sur les page de formation*/
+#div_block-162-123 a.active,    /* div sur "Publicité assisté par ordinateur" */
+#div_block-76-209 a.active,     /* div sur "Montage vidéo" */
+#div_block-253-125 a.active,    /* div sur "Site web & E-commerce" */
+#div_block-269-127 a.active,    /* div sur "Langues" */
+#div_block-170-129 a.active {   /* div sur "Sécurité et incendie" */
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Modifie l'allure des champs d'inscriptions pour les écran de taille normale */
+@media (min-width: 1200px) {
+
+    /* La card s'élargit pour accueillir les deux colonnes */
+    .user-registration.ur-frontend-form {
+        max-width: 900px !important;
+    }
+
+    /* Le form devient flex pour mettre les deux rows côte à côte */
+    .user-registration.ur-frontend-form .register {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 0 60px !important;
+        align-items: center !important;
+    }
+
+    /* Chaque row prend une colonne */
+    .user-registration.ur-frontend-form .ur-form-row {
+        flex: 1 !important;
+    }
+
+    /* Les inputs prennent toute la largeur de leur colonne */
+    .user-registration.ur-frontend-form .input-text,
+    .user-registration.ur-frontend-form .input-email,
+    .user-registration.ur-frontend-form .input-password {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Le bouton passe en dessous sur toute la largeur */
+    .user-registration.ur-frontend-form .ur-button-container {
+        width: 100% !important;
+    }
+
+}
+
